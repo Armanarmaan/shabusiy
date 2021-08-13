@@ -4,7 +4,8 @@ function Home() {
   
   
   return (
-    <div>
+
+    <div clasname="home">
       <p>Home</p>
     </div>
   );
