@@ -1,0 +1,212 @@
+
+.Nav-Header{
+    position: fixed;
+    padding-top: 44px;
+    height: 20px;
+    width: 100%;
+    z-index: 1056;
+    .Nav-Container{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 92px;
+        background-color:transparent;
+        .Nav-Logo{
+            display: flex;
+            align-items: center;
+            .Nav-Title{
+                mix-blend-mode: difference;
+                margin-left: 17px;
+                font-size: 32px;
+                margin-bottom: 0;
+                letter-spacing: 6px;
+                color: #3C3C3B;
+            }
+            .Nav-Title.actived{
+                color: white;
+            }
+            .Logo{
+                height: 100%;
+            }
+        }
+        
+        .Nav-Hamburger{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            .Hamburger-btn{
+
+                width: 114px;
+                height: 3px;
+                background-color: #3C3C3B;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                transition: 0.6s;
+            }
+            .Hamburger-btn-2{
+                
+                justify-content: end;
+                width: 67px;
+                height: 3px;
+                background-color: #3C3C3B;
+                border-radius: 5px;
+                transition: 0.6s;
+            }
+            .Hamburger-btn.active{
+                transform: rotate(45deg);
+                background-color: white;
+                width: 67px !important;
+                margin: 0px !important;
+            }
+            .Hamburger-btn-2.active{
+                background-color: white;
+                transform: rotate(-45deg);
+                position: absolute;
+            }
+        }
+    }
+}
+
+    .modal-dialog{
+        max-width: none !important;
+        margin: unset !important;
+        .modal-content{
+            mix-blend-mode: difference;
+            background-clip: unset;
+            border: none;
+            border-radius: unset;
+            height: 100vh;
+            background-color: #0E4F79;
+            color: white;
+            .modal-body{
+                .Nav-Container{
+                    padding: 260px 137px 0px 120px;
+                    display: flex;
+                    justify-content: space-between;
+                    .Left-Section{
+                        display: flex;
+                        flex-direction: column;
+                        width: 325px;
+                        .accordion-item{
+                            border: none;
+                            .header-accordion{
+                                button{
+                                    background-color: #0E4F79;
+                                }
+                                button:after{
+                                    display: none;
+                                }
+                            }
+                            .accordion-body{
+                                background-color: #0E4F79;
+                                border: none;
+                            }
+                        }
+                        
+                        
+                        .Left-Section-Tools{
+                            display: flex;
+                            background-color: transparent;
+                            border: none;
+                            box-shadow: none;
+                            align-items: center;
+                            p{
+                                font-family: Helvetica;
+                                font-size: 14px;
+                                margin: unset;
+                                letter-spacing: 10px;
+                            }
+                            .Menu-Content-Tools{
+                                display: inline-flex;
+                                align-items: center;
+                                padding: 10px 20px;
+                                .Plus1{
+                                    position: absolute;
+                                    width: 15px;
+                                    height: 2px;
+                                    background-color: white;
+                                    border-radius: 5px;
+                                    margin: 0px;
+                                }
+                                .Plus2{
+                                    transform: rotate(0deg);
+                                    width: 15px;
+                                    height: 2px;
+                                    background-color: white;
+                                    border-radius: 5px;
+                                    transition: 0.8s;
+                                }
+                                
+                                .Plus2.actived{
+                                    transform: rotate(90deg);
+                                    height: 2px;
+                                    position: absolute;
+                                    margin: 0px;
+                                }
+                            }
+                       
+                        }
+
+                        .Menu-Content{
+                            p{
+                                padding-top: 20px;
+                                font-family: Helvetica;
+                                font-weight: 400;
+                                font-size: 14px;
+                                padding-left: 45px;
+                                letter-spacing: 7px;
+                            }
+                        }
+                        .Menu-Content.collapsing {
+                            -webkit-transition-delay: 0.6s;
+                            transition-delay: 0.8s;
+                            transition: height 0.8s ;
+                          }
+                        
+                        
+                    }
+                    .Middle-Section{
+                        padding-top: 5px;
+                        .Title-Section{
+                            p{
+                                margin: 0px;
+                                font-family: Helvetica;
+                                font-size: 14px;
+                                letter-spacing: 7px;
+                                font-weight: 300;
+                            }
+                        }
+                        .Social-Logo-Section{
+                            padding-top: 19px;
+                            img{
+                                padding-right: 19px;
+                            }
+                        }
+                    }
+                    .Right-Section{
+                        p{
+                            letter-spacing: 10px;
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                justify-content: space-between;
+                border-top: none;
+                padding: 0px 120px 64px 120px;
+                p{
+                    font-size: 14px;
+                    font-family: Helvetica;
+                    font-weight: 300;
+                    letter-spacing: 7px;
+                }
+            }
+        }
+    }
+
+

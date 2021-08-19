@@ -1,5 +1,8 @@
 import '../style/Home.scss';
-import Accordion from 'react-bootstrap/Accordion';
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+import $ from 'jquery';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
@@ -7,6 +10,20 @@ function Home() {
   const imgsec2 = require('../Assets/sec2.png').default;
   const imgsec3 = require('../Assets/sec3.png').default;
   const imgsec4 = require('../Assets/sec4.png').default;
+  const [PagesShow, setPagesShow] = useState(true);
+
+
+  const PagesClick = () => {
+    if (PagesShow) {
+      $('.Plus2').addClass('actived');
+
+      setPagesShow(false)
+    } else {
+      $('.Plus2').removeClass('actived');
+      setPagesShow(true)
+    }
+
+  }
 
   return (
     <div className="home">
@@ -15,32 +32,23 @@ function Home() {
           <img src={imglandingpage} alt="image-landingpage" />
         </div>
         <div className="landingpage-right">
-          <Accordion className="accordion" defaultActiveKey="0" flush>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>PAGES</Accordion.Header>
-              <Accordion.Body>
-                <div className="list">
-                  <ul>
-                    <li>
-                      <a>ABOUT</a>
-                    </li>
-                    <li>
-                      <a>OUR MEAT</a>
-                    </li>
-                    <li>
-                      <a>RECOMMENDATION</a>
-                    </li>
-                    <li>
-                      <a>MENU</a>
-                    </li>
-                    <li>
-                      <a>CONTACT</a>
-                    </li>
-                  </ul>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
+          <Button className="Left-Section-Tools" aria-controls="Pages-Content"
+            aria-expanded={PagesShow} onClick={PagesClick}>
+            <p>PAGES</p>
+            <div className="Menu-Content-Tools">
+              <div className="Plus1"></div>
+              <div className="Plus2"></div>
+            </div>
+          </Button>
+          <Collapse in={PagesShow} timeout={2000}>
+            <div id="Pages-Content" className="Menu-Content">
+              <p>About</p>
+              <p>Our Meat</p>
+              <p>Recommendation</p>
+              <p>Menu</p>
+              <p>Contact</p>
+            </div>
+          </Collapse>
         </div>
       </div>
       <div className="section1">
