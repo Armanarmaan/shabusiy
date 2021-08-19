@@ -3,6 +3,8 @@ import React from 'react';
 import $ from 'jquery';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
 
 function Nav() {
   const Logo = require('../Assets/LOGO-19.png').default;
@@ -10,7 +12,8 @@ function Nav() {
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
-  
+  const [PagesShow, setPagesShow] = useState(true);
+
 
   const HamburgerClick = () => {
     if (show) {
@@ -21,8 +24,20 @@ function Nav() {
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
-      $('.Nav-Title').addClass('actived')
+      $('.Nav-Title').addClass('actived');
       setShow(true)
+    }
+
+  }
+
+  const PagesClick = () => {
+    if (PagesShow) {
+      $('.Plus2').addClass('actived');
+
+      setPagesShow(false)
+    } else {
+      $('.Plus2').removeClass('actived');
+      setPagesShow(true)
     }
 
   }
@@ -45,20 +60,23 @@ function Nav() {
         <Modal.Body>
           <div className="Nav-Container">
             <div className="Left-Section">
-              <div className="Left-Section-Tools">
+              <Button className="Left-Section-Tools" aria-controls="Pages-Content"
+                aria-expanded={PagesShow} onClick={PagesClick}>
                 <p>PAGES</p>
                 <div className="Menu-Content-Tools">
                   <div className="Plus1"></div>
                   <div className="Plus2"></div>
                 </div>
-              </div>
-              <div className="Menu-Content">
-                <p>About</p>
-                <p>Our Meat</p>
-                <p>Recommendation</p>
-                <p>Menu</p>
-                <p>Contact</p>
-              </div>
+              </Button>
+              <Collapse in={PagesShow} timeout={2000}>
+                <div id="Pages-Content" className="Menu-Content">
+                  <p>About</p>
+                  <p>Our Meat</p>
+                  <p>Recommendation</p>
+                  <p>Menu</p>
+                  <p>Contact</p>
+                </div>
+              </Collapse>
             </div>
             <div className="Middle-Section">
               <div className="Title-Section">
@@ -76,6 +94,10 @@ function Nav() {
 
           </div>
         </Modal.Body>
+        <Modal.Footer>
+              <p>© CLAW</p>
+              <p>2021, ALL RIGHTS RESERVED.</p>
+        </Modal.Footer>
 
       </Modal>
 
