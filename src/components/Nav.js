@@ -19,13 +19,18 @@ function Nav() {
     if (show) {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
-      $('.Nav-Title').removeClass('actived')
+      $('.Nav-Title').removeClass('actived');
+      $('.modal').addClass('show-up')
       setShow(false)
+     
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
       $('.Nav-Title').addClass('actived');
-      setShow(true)
+      $('.modal').removeClass('show-up');
+      setShow(true);
+     
+      
     }
 
   }
@@ -55,7 +60,7 @@ function Nav() {
           <div className="Hamburger-btn-2"></div>
         </div>
       </div>
-      <Modal show={show} >
+      <Modal show={show} animation={false} dialogClassName="Show-up">
 
         <Modal.Body>
           <div className="Nav-Container">
