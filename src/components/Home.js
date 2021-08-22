@@ -32,7 +32,7 @@ function Home() {
           <img src={imglandingpage} alt="image-landingpage" />
         </div>
         <div className="landingpage-right">
-          <Button className="Left-Section-Tools" aria-controls="Pages-Content"
+          <Button className="Right-Section-Tools" aria-controls="Pages-Content"
             aria-expanded={PagesShow} onClick={PagesClick}>
             <p>PAGES</p>
             <div className="Menu-Content-Tools">
