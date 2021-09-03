@@ -1,10 +1,10 @@
 .Show-up{
     animation-name: opacity-on;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
 }
 .Show-up.show-down{
     animation-duration: opacity-off;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
 }
 
 @keyframes opacity-on {
@@ -23,6 +23,7 @@
     height: 20px;
     width: 100%;
     z-index: 1056;
+    mix-blend-mode: difference;
     .Nav-Container{
         display: flex;
         position: relative;
@@ -45,6 +46,7 @@
             }
             .Nav-Title.actived{
                 color: white;
+                transition: 0.6s;
             }
             .Logo{
                 height: 100%;
@@ -87,6 +89,9 @@
             }
         }
     }
+}
+.Nav-Header.actived{
+    mix-blend-mode: normal;
 }
 
     .modal-dialog{
@@ -133,6 +138,8 @@
                             box-shadow: none;
                             align-items: center;
                             p{
+                                cursor: pointer;
+                                pointer-events: all;
                                 font-family: Helvetica;
                                 font-size: 14px;
                                 margin: unset;
@@ -176,7 +183,6 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 padding-left: 45px;
-                                letter-spacing: 7px;
                             }
                         }
                         .Menu-Content.collapsing {

@@ -1,14 +1,14 @@
 .Footer-Container{
-    display: flex;
     height: 100vh;
     background-color: #0E4F79;
     .Footer-Wraper{
-        display: flex;
         padding-top: 44px;
+        display: flex;
+        flex-direction: column;
         .Footer-Content-Wraper{
-            padding: 260px 137px 0px 120px;
-            display: flex
-            ;justify-content: space-between;
+            padding: 230px 137px 0px 120px;
+            display: flex;
+            justify-content: space-between;
             .Footer-Left-Section{
                 display: flex;
                 flex-direction: column;
@@ -23,7 +23,7 @@
                         font-family: Helvetica;
                         font-size: 14px;
                         margin: unset;
-                        letter-spacing: 10px;
+                        letter-spacing: 7px;
                     }
                     .Menu-Content-Tools{
                         display: inline-flex;
@@ -63,7 +63,6 @@
                         font-weight: 400;
                         font-size: 14px;
                         padding-left: 45px;
-                        letter-spacing: 7px;
                         color: white;
                     }
                 }
@@ -72,6 +71,45 @@
                     transition-delay: 0.8s;
                     transition: height 0.8s ;
                   }
+            }
+            .Footer-Midle-Section{
+                padding-top: 5px;
+                .Footer-Title-Section{
+                    p{
+                        color: white;
+                        margin: 0px;
+                        font-family: Helvetica;
+                        font-size: 14px;
+                        letter-spacing: 7px;
+                        font-weight: 300;
+                    }
+                }
+                .Footer-Social-Logo-Section{
+                    padding-top: 19px;
+                    img{
+                        padding-right: 19px;
+                    }
+                }
+            }
+            .Footer-Right-Section{
+                p{
+                    color: white;
+                    letter-spacing: 10px;
+                    font-size: 32px;
+                }
+            }
+        }
+        .Footer-Lower-Section{
+            justify-content: space-between;
+            padding: 79px 120px 0px 120px;
+            display: flex;
+            p{
+                color: white;
+                font-size: 14px;
+                font-family: Helvetica;
+                font-weight: 300;
+                letter-spacing: 7px;
+                margin: unset;
             }
         }
     }
