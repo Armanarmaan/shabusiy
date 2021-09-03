@@ -1,3 +1,21 @@
+.Show-up{
+    animation-name: opacity-on;
+    animation-duration: 0.8s;
+}
+.Show-up.show-down{
+    animation-duration: opacity-off;
+    animation-duration: 0.8s;
+}
+
+@keyframes opacity-on {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes opacity-off {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 
 .Nav-Header{
     position: fixed;
@@ -5,6 +23,7 @@
     height: 20px;
     width: 100%;
     z-index: 1056;
+    mix-blend-mode: difference;
     .Nav-Container{
         display: flex;
         position: relative;
@@ -27,6 +46,7 @@
             }
             .Nav-Title.actived{
                 color: white;
+                transition: 0.6s;
             }
             .Logo{
                 height: 100%;
@@ -70,12 +90,15 @@
         }
     }
 }
+.Nav-Header.actived{
+    mix-blend-mode: normal;
+}
 
     .modal-dialog{
         max-width: none !important;
         margin: unset !important;
+        transition: 0.6s linear 0.4s;
         .modal-content{
-            mix-blend-mode: difference;
             background-clip: unset;
             border: none;
             border-radius: unset;
@@ -115,6 +138,8 @@
                             box-shadow: none;
                             align-items: center;
                             p{
+                                cursor: pointer;
+                                pointer-events: all;
                                 font-family: Helvetica;
                                 font-size: 14px;
                                 margin: unset;
@@ -158,7 +183,6 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 padding-left: 45px;
-                                letter-spacing: 7px;
                             }
                         }
                         .Menu-Content.collapsing {
@@ -207,6 +231,66 @@
                 }
             }
         }
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+        .Nav-Header{
+            width: 65%;
+            .Nav-Container{
+                margin: 0px;
+                padding-right: 45px;
+                justify-content: flex-end;
+                .Nav-Logo{
+                    display: none;
+                }
+            }
+        }
+        .modal{
+            width: 100vw !important;
+            height: 85vh !important;
+            .modal-dialog{
+                .modal-content{
+                    height: 85vh;
+                    .modal-body{
+                        .Nav-Container{
+                            padding: 150px 0px 0px 0px;
+                            .Left-Section{
+                                .Menu-Content{
+                                    p{
+                                        padding-top: 10px;
+                                        padding-left: 24px;
+                                        letter-spacing: 3px;
+                                    }
+                                }
+                            }
+                            .Middle-Section{
+                                display: none;                        
+                            }
+                            .Right-Section{
+                                img{
+                                    height: 125px;
+                                }
+                                p{
+                                    letter-spacing: 0px;
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                    .modal-footer{
+                        justify-content: center;
+                        padding: 0px 50px 50px 50px;
+                        p{
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 
 

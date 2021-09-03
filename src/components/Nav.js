@@ -5,27 +5,36 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
+import ScrollIntoView from 'react-scroll-into-view';
 
 function Nav() {
-  const Logo = require('../Assets/LOGO-19.png').default;
-  const Logo2 = require('../Assets/LOGO-21.png').default;
+  const Logo = require('../Assets/Logo-Hitam.svg').default;
+  const Logo2 = require('../Assets/Logo-Putih.svg').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
+  const [shownav, setshownav] = useState(false)
 
 
   const HamburgerClick = () => {
     if (show) {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
-      $('.Nav-Title').removeClass('actived')
+      $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
+      $('.modal').addClass('show-up');
       setShow(false)
+      setshownav(false)
+     
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
       $('.Nav-Title').addClass('actived');
-      setShow(true)
+      $('.Nav-Header').addClass('actived');
+      $('.modal').removeClass('show-up');
+      setShow(true); 
+      setshownav(true)
     }
 
   }
@@ -42,12 +51,86 @@ function Nav() {
 
   }
 
+  const scrollviewTestAbout = () =>{
+    if(show){
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('html, body').animate({
+        scrollTop: $("#About").offset().top
+    }, 100);
+    setshownav(false)
+    } else {
+      setshownav(true)
+    }
+    
+  }
+  
+  const scrollviewTestOurMeat = () =>{
+    if(show){
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('html, body').animate({
+        scrollTop: $("#OurMeat").offset().top
+    }, 100);
+    setshownav(false)
+    } else {
+      setshownav(true)
+    }
+    
+  }
+  
+  const scrollviewTestRecommendation = () =>{
+    if(show){
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('html, body').animate({
+        scrollTop: $("#Recommendation").offset().top
+    }, 100);
+    setshownav(false)
+    } else {
+      setshownav(true)
+    }
+    
+  }
+
+  const scrollviewTestMenu = () =>{
+    if(show){
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('html, body').animate({
+        scrollTop: $("#Menu").offset().top
+    }, 100);
+    setshownav(false)
+    } else {
+      setshownav(true)
+    }
+    
+  }
+
+  const scrollviewTestContact = () =>{
+    if(show){
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('html, body').animate({
+        scrollTop: $("#Contact").offset().top
+    }, 100);
+    setshownav(false)
+    } else {
+      setshownav(true)
+    }
+    
+  }
 
   return (
     <div className="Nav-Header">
       <div className="Nav-Container">
         <div className="Nav-Logo">
-          <img className="Logo" src={Logo2}></img>
+          <img className="Logo" src={Logo}></img>
           <p className="Nav-Title"> shabu • siy</p>
         </div>
         <div className="Nav-Hamburger" onClick={HamburgerClick}>
@@ -55,7 +138,7 @@ function Nav() {
           <div className="Hamburger-btn-2"></div>
         </div>
       </div>
-      <Modal show={show} >
+      <Modal show={shownav} animation={false} dialogClassName="Show-up">
 
         <Modal.Body>
           <div className="Nav-Container">
@@ -70,11 +153,11 @@ function Nav() {
               </Button>
               <Collapse in={PagesShow} timeout={2000}>
                 <div id="Pages-Content" className="Menu-Content">
-                  <p>About</p>
-                  <p>Our Meat</p>
-                  <p>Recommendation</p>
-                  <p>Menu</p>
-                  <p>Contact</p>
+                  <p onClick={scrollviewTestAbout}>About</p>
+                  <p onClick={scrollviewTestOurMeat}>Our Meat</p>
+                  <p onClick={scrollviewTestRecommendation}>Recommendation</p>
+                  <p onClick={scrollviewTestMenu}>Menu</p>
+                  <p onClick={scrollviewTestContact}>Contact</p>
                 </div>
               </Collapse>
             </div>
@@ -87,11 +170,6 @@ function Nav() {
                 <img src={FacebookLogo}></img>
               </div>
             </div>
-            <div className="Right-Section">
-              <img src={Logo2}></img>
-              <p>shabu • siy</p>
-            </div>
-
           </div>
         </Modal.Body>
         <Modal.Footer>

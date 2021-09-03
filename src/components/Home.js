@@ -51,7 +51,7 @@ function Home() {
           </Collapse>
         </div>
       </div>
-      <div className="section1">
+      <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
             <img src={imgsec1} alt="image-sec1" className="image" />
@@ -64,7 +64,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="section2">
+      <div className="section2" id="OurMeat">
         <div className="contentsec2">
           <div className="sec2-left">
             <div className="title">
@@ -77,7 +77,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="section3">
+      <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
             <img src={imgsec3} alt="image-sec3" className="image" />
@@ -90,7 +90,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="section4">
+      <div className="section4" id="Menu">
         <div className="sec4-left">
           <div className="title">
             <p>MENU</p>
@@ -101,7 +101,7 @@ function Home() {
           <img src={imgsec4} alt="image-sec4" />
         </div>
       </div>
-      <div className="section5">
+      <div className="section5" id="Contact">
         <div>
           <div className="contact">
             <p>CONTACT</p>
