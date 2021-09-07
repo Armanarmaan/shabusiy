@@ -160,9 +160,10 @@
     .section5{
         justify-content: center;
         display: flex;
-        padding-top: 212px;
+        padding-top: 125px;
         padding-bottom: 202px;
         letter-spacing: 7px;
+        height: auto;
         .contentsec5{
             .contact{
                 text-align: center;
@@ -201,11 +202,12 @@
         .landingpage{
             height: auto;
                 .landingpage-left{
-                    width: 100%;
+                    width: 70%;
+                    margin-bottom: 212px;
                 }
                 .landingpage-right{
                     padding-left: unset;
-                    visibility: hidden;
+                    display: none;
                 }    
         }
         .section1{
@@ -270,6 +272,8 @@
             margin-top: 98px;
             .contentsec4{
                 padding: 0px 20px;
+                display: flex;
+                flex-direction: column-reverse;
                 img{
                     width: 100%;
                 }
@@ -283,7 +287,7 @@
             height: auto;
             .contentsec5{
                 .contact{
-                    margin-bottom: 0px;
+                    margin-bottom: 20px;
                 }
                 .content{
                     width: unset;
@@ -298,6 +302,9 @@
                     .content-bottom{
                         flex-direction: column;
                         align-items: center;
+                    }
+                    p{
+                        font-size: 14px;
                     }
                 }
             }
