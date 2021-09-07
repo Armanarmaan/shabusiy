@@ -139,25 +139,15 @@ function Home() {
             <p>CONTACT</p>
           </div>
           <div className="content">
-            <div className="content-left">
-              <p>Address</p>
-              <p>E-Mail</p>
-              <p>Phone Number</p>
-            </div>
-            <div className="content-right">
-              <p>Jl. Cipete Raya No.12</p>
-              <p>shabu.siy@123.com</p>
-              <p>021-7123456</p>
-            </div>
-          </div>
-          <div className="contentmobile">
-            <div className="content-left">
+            <div className="content-top">
               <p>Address</p>
               <p>Jl. Cipete Raya No.12</p>
-              <p>E-Mail</p>
             </div>
-            <div className="content-right">
+            <div className="content-midle">
+              <p>Email</p>
               <p>shabu.siy@123.com</p>
+            </div>
+            <div className="content-bottom">
               <p>Phone Number</p>
               <p>021-7123456</p>
             </div>
