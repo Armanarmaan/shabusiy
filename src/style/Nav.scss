@@ -238,19 +238,41 @@
 
     @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
         .Nav-Header{
-            width: 65%;
+            width: 80%;
             .Nav-Container{
-                margin: 0px;
-                padding-right: 45px;
-                justify-content: flex-end;
+                padding: 0px 20px;
+                .Nav-Logo{
+                    .Logo{
+                        height: 80%;
+                    }
+                    .Nav-Title{
+                        mix-blend-mode: difference;
+                        margin-left: 5px;
+                        font-size: 17px;
+                        margin-bottom: 0;
+                        letter-spacing: 4px;
+                    }
+                }
+                .Nav-Hamburger{
+                    .Hamburger-btn{
+                        width: 75px;
+                    }
+                    .Hamburger-btn-2{
+                        width: 47px;
+                    }
+                    .Hamburger-btn.active{
+                        width: 47px !important;
+                    }
+                    
+                }
             }
         }
         .modal{
             width: 100vw !important;
-            height: 85vh !important;
+            height: 100vh !important;
             .modal-dialog{
                 .modal-content{
-                    height: 85vh;
+                    height: 100vh;
                     .modal-body{
                         .Nav-Container{
                             padding: 150px 0px 0px 0px;
