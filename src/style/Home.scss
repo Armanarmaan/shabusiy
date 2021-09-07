@@ -31,7 +31,7 @@
             }
             .landingpage-right{
                 width: 40%;
-                padding-left: 238px;
+                padding-left: 220px;
                 padding-top: 106px;
                 .Right-Section-Tools{
                     display: flex;
@@ -82,7 +82,6 @@
                     font-weight: 400;
                     font-size: 14px;
                     padding-left: 45px;
-                    letter-spacing: 7px;
                 }
             }
             .Menu-Content.collapsing {
@@ -195,9 +194,10 @@
     }
 }
 
-@media (max-device-width: 812px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
     .home{
         .landingpage{
+            height: auto;
                 .landingpage-left{
                     width: 100%;
                 }
@@ -208,6 +208,8 @@
         }
         .section1{
             padding: unset;
+            height: auto;
+            margin-bottom: 60px;
             .contentsec1{
                 padding: 0px 20px;
                 flex-direction: column;
@@ -218,17 +220,23 @@
                 .sec1-right{
                     width: 100%;
                     padding-left: unset;
+                    padding-top: unset;
+                    margin-top: 24px;
                 }
             }
         }
         .section2{
             padding: unset;
+            height: auto;
+            margin-bottom: 60px;
             .contentsec2{
                 padding: 0px 20px;
                 flex-direction: column-reverse;
                 .sec2-left{
                     width: 100%;
                     padding-right: unset;
+                    padding-top: unset;
+                    margin-top: 24px;
                 }
                 .sec2-right{
                     width: 100%;
@@ -238,6 +246,7 @@
         }
         .section3{
             padding: unset;
+            height: auto;
             .contentsec3{
                 padding: 0px 20px;
                 flex-direction: column;
@@ -248,10 +257,15 @@
                 .sec3-right{
                     width: 100%;
                     padding-left: unset;
+                    padding-top: unset;
+                    margin-top: 24px;
                 }
             }
         }
         .section4{
+            height: auto;
+            padding-top: unset;
+            margin-top: 98px;
             .contentsec4{
                 padding: 0px 20px;
                 img{
@@ -260,6 +274,11 @@
             }
         }
         .section5{
+            padding-top: unset;
+            margin-top: 98px;
+            padding-bottom: unset;
+            margin-bottom: 98px;
+            height: auto;
             .contentsec5{
                 .contact{
                     margin-bottom: 0px;
@@ -276,7 +295,7 @@
                     text-align: center;
                     line-height: 24px;
                     p{
-                        font-size: 10px;
+                        font-size: 14px;
                     }
                 }
             }
