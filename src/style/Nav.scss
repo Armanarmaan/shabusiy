@@ -238,7 +238,7 @@
 
     @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
         .Nav-Header{
-            width: 80%;
+            width: 100%;
             .Nav-Container{
                 padding: 0px 20px;
                 .Nav-Logo{
@@ -269,10 +269,10 @@
         }
         .modal{
             width: 100vw !important;
-            height: 100vh !important;
+            height: 101vh !important;
             .modal-dialog{
                 .modal-content{
-                    height: 100vh;
+                    height: 101vh;
                     .modal-body{
                         .Nav-Container{
                             padding: 150px 0px 0px 0px;
