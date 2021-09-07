@@ -7,6 +7,7 @@
         flex-direction: column;
         .Footer-Content-Wraper{
             padding: 230px 137px 0px 120px;
+            height: 78vh;
             display: flex;
             justify-content: space-between;
             .Footer-Left-Section{
@@ -110,6 +111,25 @@
                 font-weight: 300;
                 letter-spacing: 7px;
                 margin: unset;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+    .Footer-Container{
+        .Footer-Wraper{
+            .Footer-Content-Wraper{
+                padding: 100px 10px 0px 10px;
+            }
+            .Footer-Lower-Section{
+                flex-direction: column;
+                padding: unset;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                }
             }
         }
     }
