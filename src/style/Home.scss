@@ -1,6 +1,6 @@
 .home{
     padding-top: 212px;
-    .section1,.section2,.section3,.section4,.landingpage{
+    .section1,.section2,.section3,.section4,.section5,.landingpage{
         width: 100%;
         height: 100vh;
     }
@@ -15,63 +15,64 @@
     }
 
     .title{
-        font-size: 22px;
+        p{
+            font-size: 22px;
+            letter-spacing: 7px;
+        }    
     }
 
     .landingpage{
         display: flex;
         img{
             width: 100%;
-        }
-        .landingpage-left{
-            width: 60%;
-        }
-        .landingpage-right{
-            width: 40%;
-            padding-left: 238px;
-            padding-top: 106px;
-            .Right-Section-Tools{
-                display: flex;
-                background-color: transparent;
-                border: none;
-                box-shadow: none;
-                align-items: center;
-                p{
-                    font-family: Helvetica;
-                    font-size: 14px;
-                    margin: unset;
-                    letter-spacing: 10px;
-                    color: black;
-                }
-                .Menu-Content-Tools{
-                    display: inline-flex;
+        }   
+            .landingpage-left{
+                width: 60%;
+            }
+            .landingpage-right{
+                width: 40%;
+                padding-left: 238px;
+                padding-top: 106px;
+                .Right-Section-Tools{
+                    display: flex;
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none;
                     align-items: center;
-                    padding: 10px 20px;
-                    .Plus1{
-                        position: absolute;
-                        width: 15px;
-                        height: 2px;
-                        background-color: black;
-                        border-radius: 5px;
-                        margin: 0px;
+                    p{
+                        font-size: 14px;
+                        margin: unset;
+                        letter-spacing: 7px;
+                        color: black;
                     }
-                    .Plus2{
-                        transform: rotate(0deg);
-                        width: 15px;
-                        height: 2px;
-                        background-color: black;
-                        border-radius: 5px;
-                        transition: 0.8s;
-                    }
-                    
-                    .Plus2.actived{
-                        transform: rotate(90deg);
-                        height: 2px;
-                        position: absolute;
-                        margin: 0px;
+                    .Menu-Content-Tools{
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 10px 20px;
+                        .Plus1{
+                            position: absolute;
+                            width: 15px;
+                            height: 2px;
+                            background-color: black;
+                            border-radius: 5px;
+                            margin: 0px;
+                        }
+                        .Plus2{
+                            transform: rotate(0deg);
+                            width: 15px;
+                            height: 2px;
+                            background-color: black;
+                            border-radius: 5px;
+                            transition: 0.8s;
+                        }
+                        
+                        .Plus2.actived{
+                            transform: rotate(90deg);
+                            height: 2px;
+                            position: absolute;
+                            margin: 0px;
                     }
                 }
-           
             }
 
             .Menu-Content{
@@ -90,6 +91,7 @@
                 transition: height 0.8s ;
               }
        
+        
         }
     }
 
@@ -105,6 +107,7 @@
             .sec1-right{
                 width: 50%;
                 padding-left: 20px;
+                padding-top: 70px;
             }
         }   
     }
@@ -117,6 +120,7 @@
             .sec2-left{
                 width: 50%;
                 padding-right: 20px;
+                padding-top: 70px;
             }
             .sec2-right{
                 width: 50%;
@@ -137,33 +141,145 @@
             .sec3-right{
                 width: 50%;
                 padding-left: 20px;
+                padding-top: 70px;
             }
         }
     }
 
     .section4{
-        .sec4-left{
-            text-align: center;
-        }
-        .sec4-right{
-            text-align: center;
+        padding-top: 212px;
+        .contentsec4{
+            .sec4-left{
+                text-align: center;
+            }
+            .sec4-right{
+                text-align: center;
+            }
         }
     }
 
     .section5{
-        width: 100%;
         justify-content: center;
         display: flex;
-        .contact{
-            text-align: center;
-            font-size: 22px;
-            margin-bottom: 30px;
+        padding-top: 212px;
+        padding-bottom: 202px;
+        letter-spacing: 7px;
+        .contentsec5{
+            .contact{
+                text-align: center;
+                margin-bottom: 50px;
+                p{
+                    font-size: 22px;
+                }
+            }
+            .content{
+                font-size: 18px;
+                width: 70rem;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 16px;
+                }
+            }
+            .contentmobile{
+                visibility: hidden;
+                font-size: 18px;
+                width: 70rem;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 16px;
+                }
+            } 
+        }      
+    }
+}
+
+@media (max-device-width: 812px) {
+    .home{
+        .landingpage{
+                .landingpage-left{
+                    width: 100%;
+                }
+                .landingpage-right{
+                    padding-left: unset;
+                    visibility: hidden;
+                }    
         }
-        .content{
-            font-size: 18px;
-            width: 45rem;
-            display: flex;
-            justify-content: space-between;
-        }       
+        .section1{
+            padding: unset;
+            .contentsec1{
+                padding: 0px 20px;
+                flex-direction: column;
+                .sec1-left{
+                    width: 100%;
+                    padding-right: unset;
+                }
+                .sec1-right{
+                    width: 100%;
+                    padding-left: unset;
+                }
+            }
+        }
+        .section2{
+            padding: unset;
+            .contentsec2{
+                padding: 0px 20px;
+                flex-direction: column-reverse;
+                .sec2-left{
+                    width: 100%;
+                    padding-right: unset;
+                }
+                .sec2-right{
+                    width: 100%;
+                    padding-left: unset;
+                }
+            }
+        }
+        .section3{
+            padding: unset;
+            .contentsec3{
+                padding: 0px 20px;
+                flex-direction: column;
+                .sec3-left{
+                    width: 100%;
+                    padding-right: unset;
+                }
+                .sec3-right{
+                    width: 100%;
+                    padding-left: unset;
+                }
+            }
+        }
+        .section4{
+            .contentsec4{
+                padding: 0px 20px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .section5{
+            .contentsec5{
+                .contact{
+                    margin-bottom: 0px;
+                }
+                .content{
+                    visibility: hidden;
+                    width: unset;
+                }
+                .contentmobile{
+                    visibility: visible;
+                    width: 100%;
+                    padding: 0px 20px;
+                    flex-direction: column;
+                    text-align: center;
+                    line-height: 24px;
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 }

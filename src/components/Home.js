@@ -22,7 +22,36 @@ function Home() {
       $('.Plus2').removeClass('actived');
       setPagesShow(true)
     }
+  }
 
+  const scrollviewTestAbout = () => {
+    $('html, body').animate({
+      scrollTop: $("#About").offset().top
+    }, 100);
+  }
+
+  const scrollviewTestOurMeat = () => {
+    $('html, body').animate({
+      scrollTop: $("#OurMeat").offset().top
+    }, 100);
+  }
+
+  const scrollviewTestRecommendation = () => {
+    $('html, body').animate({
+      scrollTop: $("#Recommendation").offset().top
+    }, 100);
+  }
+
+  const scrollviewTestMenu = () => {
+    $('html, body').animate({
+      scrollTop: $("#Menu").offset().top
+    }, 100);
+  }
+
+  const scrollviewTestContact = () => {
+    $('html, body').animate({
+      scrollTop: $("#Contact").offset().top
+    }, 100);
   }
 
   return (
@@ -42,15 +71,16 @@ function Home() {
           </Button>
           <Collapse in={PagesShow} timeout={2000}>
             <div id="Pages-Content" className="Menu-Content">
-              <p>About</p>
-              <p>Our Meat</p>
-              <p>Recommendation</p>
-              <p>Menu</p>
-              <p>Contact</p>
+              <p onClick={scrollviewTestAbout}>About</p>
+              <p onClick={scrollviewTestOurMeat}>Our Meat</p>
+              <p onClick={scrollviewTestRecommendation}>Recommendation</p>
+              <p onClick={scrollviewTestMenu}>Menu</p>
+              <p onClick={scrollviewTestContact}>Contact</p>
             </div>
           </Collapse>
         </div>
       </div>
+
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
@@ -91,18 +121,20 @@ function Home() {
         </div>
       </div>
       <div className="section4" id="Menu">
-        <div className="sec4-left">
-          <div className="title">
-            <p>MENU</p>
+        <div className="contentsec4">
+          <div className="sec4-left">
+            <div className="title">
+              <p>MENU</p>
+            </div>
+            <p>Click the image to explore our complete menu.</p>
           </div>
-          <p>Click the image to explore our complete menu.</p>
-        </div>
-        <div className="sec4-right">
-          <img src={imgsec4} alt="image-sec4" />
+          <div className="sec4-right">
+            <img src={imgsec4} alt="image-sec4" />
+          </div>
         </div>
       </div>
       <div className="section5" id="Contact">
-        <div>
+        <div className="contentsec5">
           <div className="contact">
             <p>CONTACT</p>
           </div>
@@ -113,9 +145,20 @@ function Home() {
               <p>Phone Number</p>
             </div>
             <div className="content-right">
-              <p>Jl. Cipete Raya No.12, Jakarta Selatan
-              </p>
+              <p>Jl. Cipete Raya No.12</p>
               <p>shabu.siy@123.com</p>
+              <p>021-7123456</p>
+            </div>
+          </div>
+          <div className="contentmobile">
+            <div className="content-left">
+              <p>Address</p>
+              <p>Jl. Cipete Raya No.12</p>
+              <p>E-Mail</p>
+            </div>
+            <div className="content-right">
+              <p>shabu.siy@123.com</p>
+              <p>Phone Number</p>
               <p>021-7123456</p>
             </div>
           </div>
