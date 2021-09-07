@@ -26,7 +26,6 @@ function Nav() {
       $('.modal').addClass('show-up');
       setShow(false)
       setshownav(false)
-     
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
