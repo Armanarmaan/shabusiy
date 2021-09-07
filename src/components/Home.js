@@ -145,7 +145,7 @@ function Home() {
               <p>Phone Number</p>
             </div>
             <div className="content-right">
-              <p>Jl. Cipete Raya No.12, Jakarta Selatan
+              <p>Jl. Cipete Raya No.12
               </p>
               <p>shabu.siy@123.com</p>
               <p>021-7123456</p>

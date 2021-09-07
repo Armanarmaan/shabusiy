@@ -200,6 +200,7 @@
         .section1{
             padding: unset;
             .contentsec1{
+                margin: 0px 20px;
                 flex-direction: column;
                 .sec1-left{
                     width: 100%;
@@ -214,6 +215,7 @@
         .section2{
             padding: unset;
             .contentsec2{
+                margin: 0px 20px;
                 flex-direction: column-reverse;
                 .sec2-left{
                     width: 100%;
@@ -228,6 +230,7 @@
         .section3{
             padding: unset;
             .contentsec3{
+                margin: 0px 20px;
                 flex-direction: column;
                 .sec3-left{
                     width: 100%;
@@ -240,12 +243,16 @@
             }
         }
         .section4{
-            img{
-                width: 100%;
+            .contentsec4{
+                margin: 0px 20px;
+                img{
+                    width: 100%;
+                }
             }
         }
         .section5{
             .contentsec5{
+                margin: 0px 20px;
                 .content{
                     width: 100%;
                 }
