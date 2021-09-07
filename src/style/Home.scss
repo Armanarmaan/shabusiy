@@ -1,6 +1,6 @@
 .home{
     padding-top: 212px;
-    .section1,.section2,.section3,.section4,.section5,.landingpage{
+    .section1,.section2,.section3,.section4,.landingpage{
         width: 100%;
         height: 100vh;
     }
@@ -181,6 +181,16 @@
                 p{
                     font-size: 16px;
                 }
+            }
+            .contentmobile{
+                visibility: hidden;
+                font-size: 18px;
+                width: 70rem;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 16px;
+                }
             } 
         }      
     }
@@ -200,7 +210,7 @@
         .section1{
             padding: unset;
             .contentsec1{
-                margin: 0px 20px;
+                padding: 0px 20px;
                 flex-direction: column;
                 .sec1-left{
                     width: 100%;
@@ -215,7 +225,7 @@
         .section2{
             padding: unset;
             .contentsec2{
-                margin: 0px 20px;
+                padding: 0px 20px;
                 flex-direction: column-reverse;
                 .sec2-left{
                     width: 100%;
@@ -230,7 +240,7 @@
         .section3{
             padding: unset;
             .contentsec3{
-                margin: 0px 20px;
+                padding: 0px 20px;
                 flex-direction: column;
                 .sec3-left{
                     width: 100%;
@@ -244,7 +254,7 @@
         }
         .section4{
             .contentsec4{
-                margin: 0px 20px;
+                padding: 0px 20px;
                 img{
                     width: 100%;
                 }
@@ -252,9 +262,22 @@
         }
         .section5{
             .contentsec5{
-                margin: 0px 20px;
+                .contact{
+                    margin-bottom: 0px;
+                }
+                padding: 0px 20px;
                 .content{
+                    visibility: hidden;
+                }
+                .contentmobile{
+                    visibility: visible;
                     width: 100%;
+                    flex-direction: column;
+                    text-align: center;
+                    line-height: 24px;
+                    p{
+                        font-size: 10px;
+                    }
                 }
             }
         }

@@ -57,30 +57,30 @@ function Home() {
   return (
     <div className="home">
       <div className="landingpage">
-          <div className="landingpage-left">
-            <img src={imglandingpage} alt="image-landingpage" />
-          </div>
-          <div className="landingpage-right">
-            <Button className="Right-Section-Tools" aria-controls="Pages-Content"
-              aria-expanded={PagesShow} onClick={PagesClick}>
-              <p>PAGES</p>
-              <div className="Menu-Content-Tools">
-                <div className="Plus1"></div>
-                <div className="Plus2"></div>
-              </div>
-            </Button>
-            <Collapse in={PagesShow} timeout={2000}>
-              <div id="Pages-Content" className="Menu-Content">
-                <p onClick={scrollviewTestAbout}>About</p>
-                <p onClick={scrollviewTestOurMeat}>Our Meat</p>
-                <p onClick={scrollviewTestRecommendation}>Recommendation</p>
-                <p onClick={scrollviewTestMenu}>Menu</p>
-                <p onClick={scrollviewTestContact}>Contact</p>
-              </div>
-            </Collapse>
-          </div>
+        <div className="landingpage-left">
+          <img src={imglandingpage} alt="image-landingpage" />
         </div>
-      
+        <div className="landingpage-right">
+          <Button className="Right-Section-Tools" aria-controls="Pages-Content"
+            aria-expanded={PagesShow} onClick={PagesClick}>
+            <p>PAGES</p>
+            <div className="Menu-Content-Tools">
+              <div className="Plus1"></div>
+              <div className="Plus2"></div>
+            </div>
+          </Button>
+          <Collapse in={PagesShow} timeout={2000}>
+            <div id="Pages-Content" className="Menu-Content">
+              <p onClick={scrollviewTestAbout}>About</p>
+              <p onClick={scrollviewTestOurMeat}>Our Meat</p>
+              <p onClick={scrollviewTestRecommendation}>Recommendation</p>
+              <p onClick={scrollviewTestMenu}>Menu</p>
+              <p onClick={scrollviewTestContact}>Contact</p>
+            </div>
+          </Collapse>
+        </div>
+      </div>
+
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
@@ -145,9 +145,20 @@ function Home() {
               <p>Phone Number</p>
             </div>
             <div className="content-right">
-              <p>Jl. Cipete Raya No.12
-              </p>
+              <p>Jl. Cipete Raya No.12</p>
               <p>shabu.siy@123.com</p>
+              <p>021-7123456</p>
+            </div>
+          </div>
+          <div className="contentmobile">
+            <div className="content-left">
+              <p>Address</p>
+              <p>Jl. Cipete Raya No.12</p>
+              <p>E-Mail</p>
+            </div>
+            <div className="content-right">
+              <p>shabu.siy@123.com</p>
+              <p>Phone Number</p>
               <p>021-7123456</p>
             </div>
           </div>
