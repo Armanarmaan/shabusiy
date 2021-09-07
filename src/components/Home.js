@@ -58,7 +58,7 @@ function Home() {
     <div className="home">
       <div className="landingpage">
         <div className="landingpage-left">
-          <img src={imglandingpage} alt="image-landingpage" />
+          <img src={imglandingpage} alt="image-landingpage" className="imgldpage" />
         </div>
         <div className="landingpage-right">
           <Button className="Right-Section-Tools" aria-controls="Pages-Content"
