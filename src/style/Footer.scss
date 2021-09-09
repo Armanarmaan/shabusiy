@@ -6,7 +6,7 @@
         display: flex;
         flex-direction: column;
         .Footer-Content-Wraper{
-            padding: 230px 137px 0px 120px;
+            padding: 232px 154px 0px 135px;
             height: 78vh;
             display: flex;
             justify-content: space-between;
@@ -102,7 +102,7 @@
         }
         .Footer-Lower-Section{
             justify-content: space-between;
-            padding: 79px 120px 0px 120px;
+            padding: 35px 125px 0px 125px;
             display: flex;
             p{
                 color: white;
@@ -120,15 +120,30 @@
     .Footer-Container{
         .Footer-Wraper{
             .Footer-Content-Wraper{
-                padding: 100px 10px 0px 10px;
+                padding: 150px 16px 0px 16px;
+                .Footer-Left-Section{
+                    .Menu-Content{
+                        padding-top: unset;
+                        padding-left: unset;
+                        letter-spacing: unset;
+                        p{
+                            font-family: Helvetica;
+                            padding-top: 10px;
+                            padding-left: 24px;
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
             }
             .Footer-Lower-Section{
                 flex-direction: column;
                 padding: unset;
+                padding-top: 3px;
                 align-items: center;
                 p{
                     font-size: 14px;
                     letter-spacing: 2px;
+                    margin: 4px;
                 }
             }
         }
