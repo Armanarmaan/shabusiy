@@ -93,7 +93,9 @@
 .Nav-Header.actived{
     mix-blend-mode: normal;
 }
-
+.modal-backdrop{
+    background: transparent;
+}
     .modal-dialog{
         max-width: none !important;
         margin: unset !important;
@@ -143,7 +145,7 @@
                                 font-family: Helvetica;
                                 font-size: 14px;
                                 margin: unset;
-                                letter-spacing: 10px;
+                                letter-spacing: 7px;
                             }
                             .Menu-Content-Tools{
                                 display: inline-flex;
@@ -272,10 +274,11 @@
             height: 101vh !important;
             .modal-dialog{
                 .modal-content{
-                    height: 101vh;
+                    height: 100vh;
                     .modal-body{
+                        max-height: 76vh;
                         .Nav-Container{
-                            padding: 150px 0px 0px 0px;
+                            padding: 180px 0px 0px 0px;
                             .Left-Section{
                                 .Menu-Content{
                                     p{
