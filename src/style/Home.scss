@@ -208,6 +208,17 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
     .home{
+        .title{
+            p{
+                font-size: 20px;
+                margin-bottom: 1.3em; 
+            }      
+        }
+
+        p{
+            font-size: 16px;
+        }
+
         .landingpage{     
                 .landingpage-left{
                     width: 70%;
@@ -225,8 +236,9 @@
             padding: unset;      
             padding-bottom: 60px;
             .contentsec1{
-                padding: 0px 20px;
+                padding: 0vw 12vw;
                 flex-direction: column;
+                overflow: overlay;
                 .sec1-left{
                     width: 100%;
                     padding-right: unset;
@@ -235,7 +247,7 @@
                     width: 100%;
                     padding-left: unset;
                     padding-top: unset;
-                    margin-top: 24px;
+                    margin-top: 1.6em;
                 }
             }
         }
@@ -243,13 +255,14 @@
             padding: unset;        
             padding-bottom: 60px;
             .contentsec2{
-                padding: 0px 20px;
+                padding: 0vw 12vw;
                 flex-direction: column-reverse;
+                overflow: overlay;
                 .sec2-left{
                     width: 100%;
                     padding-right: unset;
                     padding-top: unset;
-                    margin-top: 24px;
+                    margin-top: 1.6em;
                 }
                 .sec2-right{
                     width: 100%;
@@ -260,8 +273,9 @@
         .section3{
             padding: unset;       
             .contentsec3{
-                padding: 0px 20px;
+                padding: 0vw 12vw;
                 flex-direction: column;
+                overflow: overlay;
                 .sec3-left{
                     width: 100%;
                     padding-right: unset;
@@ -270,7 +284,7 @@
                     width: 100%;
                     padding-left: unset;
                     padding-top: unset;
-                    margin-top: 24px;
+                    margin-top: 1.6em;
                 }
             }
         }
@@ -278,9 +292,13 @@
             padding-top: unset;
             padding-top: 98px;
             .contentsec4{
-                padding: 0px 20px;
+                padding: 0vw 12vw;
                 display: flex;
                 flex-direction: column-reverse;
+                overflow: overlay;
+                .sec4-left{
+                    margin-top: 1.6em;
+                }
                 img{
                     width: 100%;
                 }
@@ -290,8 +308,12 @@
             padding-top: 98px;
             padding-bottom: 98px;
             .contentsec5{
+                overflow: overlay;
                 .contact{
                     margin-bottom: 20px;
+                    p{
+                        font-size: 20px;
+                    }
                 }
                 .content{
                     width: unset;
@@ -308,7 +330,9 @@
                         align-items: center;
                     }
                     p{
-                        font-size: 16px;
+                        font-size: 18px;
+                        line-height: 60px;
+                        letter-spacing: 3px;
                     }
                 }
             }

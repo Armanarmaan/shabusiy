@@ -145,7 +145,7 @@ function Home() {
             </div>
             <div className="content-midle">
               <p>Email</p>
-              <p>shabu.siy@123.com</p>
+              <p>shabuysiy.jakarta@gmail.com</p>
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
