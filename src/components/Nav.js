@@ -14,7 +14,7 @@ function Nav() {
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
-  const [shownav, setshownav] = useState(false)
+  const [shownav, setshownav] = useState(false);
 
 
   const HamburgerClick = () => {
@@ -55,12 +55,15 @@ function Nav() {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
       $('html, body').animate({
-        scrollTop: $("#About").offset().top
+        scrollTop: $("#About").offset().top-200
     }, 100);
-    setshownav(false)
+    setshownav(false);
+    setShow(false);
     } else {
-      setshownav(true)
+      setshownav(true);
+      setShow(true);
     }
     
   }
@@ -70,12 +73,15 @@ function Nav() {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
       $('html, body').animate({
-        scrollTop: $("#OurMeat").offset().top
+        scrollTop: $("#OurMeat").offset().top-200
     }, 100);
-    setshownav(false)
+    setshownav(false);
+    setShow(false);
     } else {
-      setshownav(true)
+      setshownav(true);
+      setShow(true);
     }
     
   }
@@ -85,12 +91,15 @@ function Nav() {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
       $('html, body').animate({
-        scrollTop: $("#Recommendation").offset().top
+        scrollTop: $("#Recommendation").offset().top-200
     }, 100);
-    setshownav(false)
+    setshownav(false);
+    setShow(false);
     } else {
-      setshownav(true)
+      setshownav(true);
+      setShow(true);
     }
     
   }
@@ -100,12 +109,15 @@ function Nav() {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
       $('html, body').animate({
-        scrollTop: $("#Menu").offset().top
+        scrollTop: $("#Menu").offset().top-200
     }, 100);
-    setshownav(false)
+    setshownav(false);
+    setShow(false);
     } else {
-      setshownav(true)
+      setshownav(true);
+      setShow(true);
     }
     
   }
@@ -115,12 +127,15 @@ function Nav() {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
       $('html, body').animate({
-        scrollTop: $("#Contact").offset().top
+        scrollTop: $("#Contact").offset().top-200
     }, 100);
-    setshownav(false)
+    setshownav(false);
+    setShow(false);
     } else {
-      setshownav(true)
+      setshownav(true);
+      setshownav(true);
     }
     
   }

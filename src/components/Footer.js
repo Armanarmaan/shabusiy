@@ -11,6 +11,8 @@ function Footer() {
   const Logo2 = require('../Assets/LOGO-21.png').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
+  const [shownav, setshownav] = useState(false);
+  const [show, setShow] = useState(false);
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -22,6 +24,36 @@ function Footer() {
       setPagesShow(true)
     }
 
+  }
+
+  const scrollviewTestAbout = () =>{
+      $('html, body').animate({
+        scrollTop: $("#About").offset().top-200
+    }, 100);
+  }
+  
+  const scrollviewTestOurMeat = () =>{
+      $('html, body').animate({
+        scrollTop: $("#OurMeat").offset().top-200
+    }, 100);
+  }
+  
+  const scrollviewTestRecommendation = () =>{
+      $('html, body').animate({
+        scrollTop: $("#Recommendation").offset().top-200
+    }, 100);
+  }
+
+  const scrollviewTestMenu = () =>{
+      $('html, body').animate({
+        scrollTop: $("#Menu").offset().top-200
+    }, 100);
+  }
+
+  const scrollviewTestContact = () =>{
+      $('html, body').animate({
+        scrollTop: $("#Contact").offset().top-200
+    }, 100);    
   }
 
   return (
@@ -39,11 +71,11 @@ function Footer() {
             </Button>
             <Collapse in={PagesShow} timeout={2000}>
               <div id="Pages-Content" className="Menu-Content">
-                <p>About</p>
-                <p>Our Meat</p>
-                <p>Recommendation</p>
-                <p>Menu</p>
-                <p>Contact</p>
+                <p onClick={scrollviewTestAbout}>About</p>
+                <p onClick={scrollviewTestOurMeat}>Our Meat</p>
+                <p onClick={scrollviewTestRecommendation}>Recommendation</p>
+                <p onClick={scrollviewTestMenu}>Menu</p>
+                <p onClick={scrollviewTestContact}>Contact</p>
               </div>
             </Collapse>
           </div>
