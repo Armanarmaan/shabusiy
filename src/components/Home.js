@@ -3,6 +3,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import $ from 'jquery';
+import { Parallax, Background } from 'react-parallax';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
@@ -11,7 +12,8 @@ function Home() {
   const imgsec3 = require('../Assets/sec3.png').default;
   const imgsec4 = require('../Assets/sec4.png').default;
   const [PagesShow, setPagesShow] = useState(true);
-
+  const isMobile = window.innerWidth < 768 ? true : false;
+  console.log(isMobile);
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -84,49 +86,49 @@ function Home() {
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
-            <img src={imgsec1} alt="image-sec1" className="image" />
+            {isMobile ? <img src={imgsec1} className="image" /> : <Parallax bgImage={imgsec1} strength={250}></Parallax>}
           </div>
           <div className="sec1-right">
-            <div className="title">
-              <p>ABOUT</p>
+            <div>
+              <p className="title">ABOUT</p>
+              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
             </div>
-            <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
           </div>
         </div>
       </div>
       <div className="section2" id="OurMeat">
         <div className="contentsec2">
           <div className="sec2-left">
-            <div className="title">
-              <p>OUR MEAT</p>
+            <div>
+              <p className="title">OUR MEAT</p>
+              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
             </div>
-            <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
           </div>
           <div className="sec2-right">
-            <img src={imgsec2} alt="image-sec2" className="image" />
+            {isMobile ? <img src={imgsec2} className="image" /> : <Parallax bgImage={imgsec2} strength={250}></Parallax>}
           </div>
         </div>
       </div>
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            <img src={imgsec3} alt="image-sec3" className="image" />
+            {isMobile ? <img src={imgsec3} className="image" /> : <Parallax bgImage={imgsec3} strength={250}></Parallax>}
           </div>
           <div className="sec3-right">
-            <div className="title">
-              <p>RECOMMENDATION</p>
+            <div>
+              <p className="title">RECOMMENDATION</p>
+              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
             </div>
-            <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
           </div>
         </div>
       </div>
       <div className="section4" id="Menu">
         <div className="contentsec4">
           <div className="sec4-left">
-            <div className="title">
-              <p>MENU</p>
+            <div>
+              <p className="title">MENU</p>
+              <p>Click the image to explore our complete menu.</p>
             </div>
-            <p>Click the image to explore our complete menu.</p>
           </div>
           <div className="sec4-right">
             <img src={imgsec4} alt="image-sec4" />
