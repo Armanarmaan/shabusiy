@@ -116,12 +116,12 @@
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+@media (max-device-width: 768px) {
     .Footer-Container{
         .Footer-Wraper{
             .Footer-Content-Wraper{
                 padding: 150px 16px 0px 16px;
-                height: 70vh;
+                height: 80vh;
                 .Footer-Left-Section{
                     .Menu-Content{
                         padding-top: unset;
