@@ -5,7 +5,6 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
-import ScrollIntoView from 'react-scroll-into-view';
 
 function Nav() {
   const Logo = require('../Assets/Logo-Hitam.svg').default;

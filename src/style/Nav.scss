@@ -26,13 +26,11 @@
     mix-blend-mode: difference;
     .Nav-Container{
         display: flex;
-        position: relative;
         justify-content: space-between;
         height: 100px;
-        width: 100%;
         margin: 0 auto;
         padding: 0 92px;
-        background-color:transparent;
+        background-color:unset;
         .Nav-Logo{
             display: flex;
             align-items: center;
@@ -234,16 +232,13 @@
             }
         }
     }
-    @media only screen and (min-device-width: 375px) and (max-device-height: 667px){
 
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+    @media (max-device-width: 768px){
         .Nav-Header{
-            width: 100%;
             .Nav-Container{
                 padding: 0px 20px;
                 .Nav-Logo{
+                    width: 210px;
                     .Logo{
                         height: 80%;
                     }
@@ -278,7 +273,7 @@
                     .modal-body{
                         max-height: 76vh;
                         .Nav-Container{
-                            padding: 180px 0px 0px 0px;
+                            padding: 177px 0px 0px 0px;
                             .Left-Section{
                                 .Menu-Content{
                                     p{
@@ -304,7 +299,7 @@
                     }
                     .modal-footer{
                         justify-content: center;
-                        padding: 0px 50px 50px 50px;
+                        padding: 73px 50px 25px 50px;
                         p{
                             letter-spacing: 2px;
                         }
