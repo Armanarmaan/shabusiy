@@ -10,21 +10,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: overlay;
 }
-
-::-webkit-scrollbar{
-  background: transparent;
-  width: 10px;
+@media (min-width: 768px) {
+  ::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: transparent;
+    transition: 0.2s;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: lightgray;
+    border-radius: 20px;
+  }
 }
-::-webkit-scrollbar-thumb{
-  background: transparent;
-  transition: 0.2s;
-}
-::-webkit-scrollbar-thumb:hover{
-  background: lightgray;
-  border-radius: 20px;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  scroll-behavior: smooth!important;
+}
+
+.scroll-bar{
+  width: 100vw;
+  height: 100vh;
 }

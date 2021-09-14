@@ -4,15 +4,16 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import $ from 'jquery';
+import Scrollbar from 'smooth-scrollbar';
 
 function Footer() {
   const [PagesShow, setPagesShow] = useState(true);
-  const Logo = require('../Assets/LOGO-19.png').default;
-  const Logo2 = require('../Assets/LOGO-21.png').default;
+  // const Logo = require('../Assets/LOGO-19.png').default;
+  // const Logo2 = require('../Assets/LOGO-21.png').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
-  const [shownav, setshownav] = useState(false);
-  const [show, setShow] = useState(false);
+  // const [shownav, setshownav] = useState(false);
+  // const [show, setShow] = useState(false);
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -27,33 +28,46 @@ function Footer() {
   }
 
   const scrollviewTestAbout = () =>{
-      $('html, body').animate({
-        scrollTop: $("#About").offset().top-200
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#About'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
   
   const scrollviewTestOurMeat = () =>{
-      $('html, body').animate({
-        scrollTop: $("#OurMeat").offset().top-200
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#OurMeat'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
   
   const scrollviewTestRecommendation = () =>{
-      $('html, body').animate({
-        scrollTop: $("#Recommendation").offset().top-200
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Recommendation'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestMenu = () =>{
-      $('html, body').animate({
-        scrollTop: $("#Menu").offset().top-200
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Menu'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestContact = () =>{
-      $('html, body').animate({
-        scrollTop: $("#Contact").offset().top-200
-    }, 100);    
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Contact'), {
+      offsetTop: 50,
+    });
   }
 
   return (
@@ -84,8 +98,8 @@ function Footer() {
               <p>FOLLOW US</p>
             </div>
             <div className="Footer-Social-Logo-Section">
-              <img src={InstagramLogo}></img>
-              <img src={FacebookLogo}></img>
+              <img src={InstagramLogo} alt="instagram"></img>
+              <img src={FacebookLogo} alt="facebook"></img>
             </div>
           </div>
         </div>

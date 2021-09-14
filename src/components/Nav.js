@@ -5,10 +5,11 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
+import Scrollbar from 'smooth-scrollbar';
 
 function Nav() {
   const Logo = require('../Assets/Logo-Hitam.svg').default;
-  const Logo2 = require('../Assets/Logo-Putih.svg').default;
+  // const Logo2 = require('../Assets/Logo-Putih.svg').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
@@ -55,11 +56,14 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('html, body').animate({
-        scrollTop: $("#About").offset().top-200
-    }, 100);
-    setshownav(false);
-    setShow(false);
+      let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+      scrollbar.scrollIntoView(document.querySelector('#About'), {
+        offsetTop: 50,
+        alignToTop: true,
+        onlyScrollIfNeeded: true,
+      });
+      setshownav(false);
+      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -73,11 +77,14 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('html, body').animate({
-        scrollTop: $("#OurMeat").offset().top-200
-    }, 100);
-    setshownav(false);
-    setShow(false);
+      let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+      scrollbar.scrollIntoView(document.querySelector('#OurMeat'), {
+        offsetTop: 50,
+        alignToTop: true,
+        onlyScrollIfNeeded: true,
+      });
+      setshownav(false);
+      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -91,11 +98,14 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('html, body').animate({
-        scrollTop: $("#Recommendation").offset().top-200
-    }, 100);
-    setshownav(false);
-    setShow(false);
+      let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+      scrollbar.scrollIntoView(document.querySelector('#Recommendation'), {
+        offsetTop: 50,
+        alignToTop: true,
+        onlyScrollIfNeeded: true,
+      });
+      setshownav(false);
+      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -109,11 +119,14 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('html, body').animate({
-        scrollTop: $("#Menu").offset().top-200
-    }, 100);
-    setshownav(false);
-    setShow(false);
+      let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+      scrollbar.scrollIntoView(document.querySelector('#Menu'), {
+        offsetTop: 50,
+        alignToTop: true,
+        onlyScrollIfNeeded: true,
+      });
+      setshownav(false);
+      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -127,11 +140,14 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('html, body').animate({
-        scrollTop: $("#Contact").offset().top-200
-    }, 100);
-    setshownav(false);
-    setShow(false);
+      let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+      scrollbar.scrollIntoView(document.querySelector('#Contact'), {
+        offsetTop: 50,
+        alignToTop: true,
+        onlyScrollIfNeeded: true,
+      });
+      setshownav(false);
+      setShow(false);
     } else {
       setshownav(true);
       setshownav(true);
@@ -143,7 +159,7 @@ function Nav() {
     <div className="Nav-Header">
       <div className="Nav-Container">
         <div className="Nav-Logo">
-          <img className="Logo" src={Logo}></img>
+          <img className="Logo" src={Logo} alt="logo"></img>
           <p className="Nav-Title"> shabu • siy</p>
         </div>
         <div className="Nav-Hamburger" onClick={HamburgerClick}>
@@ -179,8 +195,8 @@ function Nav() {
                 <p>FOLLOW US</p>
               </div>
               <div className="Social-Logo-Section">
-                <img src={InstagramLogo}></img>
-                <img src={FacebookLogo}></img>
+                <img src={InstagramLogo} alt="instagram"></img>
+                <img src={FacebookLogo} alt="facebook"></img>
               </div>
             </div>
           </div>

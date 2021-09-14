@@ -3,6 +3,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import $ from 'jquery';
+import Scrollbar from 'smooth-scrollbar';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
@@ -25,40 +26,55 @@ function Home() {
   }
 
   const scrollviewTestAbout = () => {
-    $('html, body').animate({
-      scrollTop: $("#About").offset().top
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#About'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestOurMeat = () => {
-    $('html, body').animate({
-      scrollTop: $("#OurMeat").offset().top
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#OurMeat'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestRecommendation = () => {
-    $('html, body').animate({
-      scrollTop: $("#Recommendation").offset().top
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Recommendation'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestMenu = () => {
-    $('html, body').animate({
-      scrollTop: $("#Menu").offset().top
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Menu'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   const scrollviewTestContact = () => {
-    $('html, body').animate({
-      scrollTop: $("#Contact").offset().top
-    }, 100);
+    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
+    scrollbar.scrollIntoView(document.querySelector('#Contact'), {
+      offsetTop: 50,
+      alignToTop: true,
+      onlyScrollIfNeeded: true,
+    });
   }
 
   return (
     <div className="home">
       <div className="landingpage">
         <div className="landingpage-left">
-          <img src={imglandingpage} alt="image-landingpage" className="imgldpage" />
+          <img src={imglandingpage} alt="landingpage" className="imgldpage" />
         </div>
         <div className="landingpage-right">
           <Button className="Right-Section-Tools" aria-controls="Pages-Content"
@@ -84,7 +100,7 @@ function Home() {
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
-            <img src={imgsec1} alt="image-sec1" className="image" />
+            <img src={imgsec1} alt="sec1" className="image" />
           </div>
           <div className="sec1-right">
             <div className="title">
@@ -103,14 +119,14 @@ function Home() {
             <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
           </div>
           <div className="sec2-right">
-            <img src={imgsec2} alt="image-sec2" className="image" />
+            <img src={imgsec2} alt="sec2" className="image" />
           </div>
         </div>
       </div>
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            <img src={imgsec3} alt="image-sec3" className="image" />
+            <img src={imgsec3} alt="sec3" className="image" />
           </div>
           <div className="sec3-right">
             <div className="title">
@@ -129,7 +145,7 @@ function Home() {
             <p>Click the image to explore our complete menu.</p>
           </div>
           <div className="sec4-right">
-            <img src={imgsec4} alt="image-sec4" />
+            <img src={imgsec4} alt="sec4" />
           </div>
         </div>
       </div>
