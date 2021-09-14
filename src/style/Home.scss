@@ -1,9 +1,8 @@
 .home{
     padding-top: 212px;
-    overflow: hidden;
     .section1,.section2,.section3,.section4,.section5,.landingpage{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
 
     .image{
@@ -22,9 +21,12 @@
         }    
     }
 
+    .react-parallax-bgimage{
+        position: relative !important;
+    }
+
     .landingpage{
         display: flex;
-        height: auto;
         padding-bottom: 212px;
             .landingpage-left{
                 width: 60%;
@@ -101,7 +103,6 @@
     .section1{
         display: flex;
         padding: 0px 94px;
-        height: auto;
         padding-bottom: 212px;
         .contentsec1{
             display: flex;
@@ -110,9 +111,10 @@
                 padding-right: 20px;
             }
             .sec1-right{
+                display: flex;
+                align-items: center;
                 width: 50%;
                 padding-left: 20px;
-                padding-top: 70px;
             }
         }   
     }
@@ -120,14 +122,14 @@
     .section2{
         display: flex;
         padding: 0px 94px;
-        height: auto;
         padding-bottom: 212px;
         .contentsec2{
             display: flex;
             .sec2-left{
                 width: 50%;
                 padding-right: 20px;
-                padding-top: 70px;
+                display: flex;
+                align-items: center;
             }
             .sec2-right{
                 width: 50%;
@@ -139,7 +141,6 @@
     .section3{
         display: flex;
         padding: 0px 94px;
-        height: auto;
         padding-bottom: 212px;
         .contentsec3{
             display: flex;
@@ -150,13 +151,13 @@
             .sec3-right{
                 width: 50%;
                 padding-left: 20px;
-                padding-top: 70px;
+                display: flex;
+                align-items: center;
             }
         }
     }
 
     .section4{
-        height: auto;
         padding-bottom: 125px;
         .contentsec4{
             .sec4-left{
@@ -173,7 +174,6 @@
         display: flex;
         padding-bottom: 202px;
         letter-spacing: 7px;
-        height: auto;
         .contentsec5{
             .contact{
                 text-align: center;
