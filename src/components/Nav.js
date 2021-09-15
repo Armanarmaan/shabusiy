@@ -22,15 +22,17 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
-      $('.modal').addClass('show-up');
-      setShow(false)
-      setshownav(false)
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
       $('.Nav-Title').addClass('actived');
       $('.Nav-Header').addClass('actived');
-      $('.modal').removeClass('show-up');
       setShow(true); 
       setshownav(true)
     }
