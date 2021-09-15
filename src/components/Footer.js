@@ -4,7 +4,6 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import $ from 'jquery';
-import Scrollbar from 'smooth-scrollbar';
 
 function Footer() {
   const [PagesShow, setPagesShow] = useState(true);
@@ -28,46 +27,33 @@ function Footer() {
   }
 
   const scrollviewTestAbout = () =>{
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#About'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#About").offset().top - 80 
+    }, 100);
   }
   
   const scrollviewTestOurMeat = () =>{
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#OurMeat'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#OurMeat").offset().top - 80 
+    }, 100);
   }
   
   const scrollviewTestRecommendation = () =>{
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Recommendation'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Recommendation").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestMenu = () =>{
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Menu'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Menu").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestContact = () =>{
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Contact'), {
-      offsetTop: 50,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Contact").offset().top - 80 
+    }, 100);
   }
 
   return (

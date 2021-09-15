@@ -3,8 +3,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import $ from 'jquery';
-import Scrollbar from 'smooth-scrollbar';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
@@ -14,7 +13,7 @@ function Home() {
   const imgsec4 = require('../Assets/sec4.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
-  console.log(isMobile);
+
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -28,52 +27,37 @@ function Home() {
   }
 
   const scrollviewTestAbout = () => {
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#About'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#About").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestOurMeat = () => {
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#OurMeat'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#OurMeat").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestRecommendation = () => {
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Recommendation'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Recommendation").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestMenu = () => {
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Menu'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Menu").offset().top - 80 
+    }, 100);
   }
 
   const scrollviewTestContact = () => {
-    let scrollbar = Scrollbar.get(document.getElementById('scroll-bar'));
-    scrollbar.scrollIntoView(document.querySelector('#Contact'), {
-      offsetTop: 50,
-      alignToTop: true,
-      onlyScrollIfNeeded: true,
-    });
+    $("html, body").animate({ 
+      scrollTop: $("#Contact").offset().top - 80 
+    }, 100);
   }
 
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="landingpage">
         <div className="landingpage-left">
           <img src={imglandingpage} alt="landingpage" className="imgldpage" />
@@ -102,7 +86,9 @@ function Home() {
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
-            {isMobile ? <img src={imgsec1} className="image" /> : <Parallax bgImage={imgsec1} strength={250}></Parallax>}
+            {isMobile ? 
+            <img src={imgsec1} className="image" alt="about us"/> : <Parallax bgImage={imgsec1} strength={250}></Parallax>
+            }
           </div>
           <div className="sec1-right">
             <div>
@@ -121,14 +107,14 @@ function Home() {
             </div>
           </div>
           <div className="sec2-right">
-            {isMobile ? <img src={imgsec2} className="image" /> : <Parallax bgImage={imgsec2} strength={250}></Parallax>}
+            {isMobile ? <img src={imgsec2} className="image" alt="our meat"/> : <Parallax bgImage={imgsec2} strength={250}></Parallax>}
           </div>
         </div>
       </div>
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            {isMobile ? <img src={imgsec3} className="image" /> : <Parallax bgImage={imgsec3} strength={250}></Parallax>}
+            {isMobile ? <img src={imgsec3} className="image" alt="recommendation"/> : <Parallax bgImage={imgsec3} strength={250}></Parallax>}
           </div>
           <div className="sec3-right">
             <div>
