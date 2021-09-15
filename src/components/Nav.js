@@ -57,11 +57,15 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
       $("html, body").animate({ 
         scrollTop: $("#About").offset().top - 80 
       }, 100);
-      setshownav(false);
-      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -75,11 +79,15 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
       $("html, body").animate({ 
         scrollTop: $("#OurMeat").offset().top - 80 
       }, 100);
-      setshownav(false);
-      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -93,11 +101,15 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
       $("html, body").animate({ 
         scrollTop: $("#Recommendation").offset().top - 80 
       }, 100);
-      setshownav(false);
-      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -111,11 +123,15 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
       $("html, body").animate({ 
         scrollTop: $("#Menu").offset().top - 80 
       }, 100);
-      setshownav(false);
-      setShow(false);
     } else {
       setshownav(true);
       setShow(true);
@@ -129,11 +145,15 @@ function Nav() {
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
       $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 800);
       $("html, body").animate({ 
         scrollTop: $("#Contact").offset().top - 80 
       }, 100);
-      setshownav(false);
-      setShow(false);
     } else {
       setshownav(true);
       setshownav(true);
