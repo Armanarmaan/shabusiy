@@ -145,11 +145,11 @@ function Home() {
           <div className="content">
             <div className="content-top">
               <p>Address</p>
-              <p>Jl. Cipete Raya No.12</p>
+              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9">Jl. Cipete Raya No.12, Jakarta</a>
             </div>
             <div className="content-midle">
               <p>Email</p>
-              <p>shabuysiy.jakarta@gmail.com</p>
+              <a href = "mailto: shabuysiy.jakarta@gmail.com">shabuysiy.jakarta@gmail.com</a>
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
