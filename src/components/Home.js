@@ -7,9 +7,9 @@ import { Parallax } from 'react-parallax';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
-  const imgsec1 = require('../Assets/sec1.png').default;
-  const imgsec2 = require('../Assets/sec2.png').default;
-  const imgsec3 = require('../Assets/sec3.png').default;
+  const imgsec1 = require('../Assets/about-us.jpg').default;
+  const imgsec2 = require('../Assets/our-meat.jpg').default;
+  const imgsec3 = require('../Assets/recommendation.jpg').default;
   const imgsec4 = require('../Assets/sec4.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
@@ -87,7 +87,7 @@ function Home() {
         <div className="contentsec1">
           <div className="sec1-left">
             {isMobile ? 
-            <img src={imgsec1} className="image" alt="about us"/> : <Parallax bgImage={imgsec1} strength={250}></Parallax>
+            <img src={imgsec1} className="image" alt="about us"/> : <Parallax bgImage={imgsec1} strength={250} className="parallax"></Parallax>
             }
           </div>
           <div className="sec1-right">
@@ -107,14 +107,14 @@ function Home() {
             </div>
           </div>
           <div className="sec2-right">
-            {isMobile ? <img src={imgsec2} className="image" alt="our meat"/> : <Parallax bgImage={imgsec2} strength={250}></Parallax>}
+            {isMobile ? <img src={imgsec2} className="image" alt="our meat"/> : <Parallax bgImage={imgsec2} strength={250} className="parallax"></Parallax>}
           </div>
         </div>
       </div>
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            {isMobile ? <img src={imgsec3} className="image" alt="recommendation"/> : <Parallax bgImage={imgsec3} strength={250}></Parallax>}
+            {isMobile ? <img src={imgsec3} className="image" alt="recommendation"/> : <Parallax bgImage={imgsec3} strength={200} className="parallax3"></Parallax>}
           </div>
           <div className="sec3-right">
             <div>
