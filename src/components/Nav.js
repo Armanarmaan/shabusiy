@@ -1,20 +1,35 @@
 import '../style/Nav.scss';
 import React from 'react';
 import $ from 'jquery';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 
 function Nav() {
   const Logo = require('../Assets/Logo-Hitam.svg').default;
-  const Logo2 = require('../Assets/Logo-Putih.svg').default;
+  const Logo2 = require('../Assets/Logo_Putih.svg').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
   const [shownav, setshownav] = useState(false);
   
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY <= 4350){
+        $('#logo-black').removeClass('d-none');
+        $('#logo-white').addClass('d-none');
+        $('.Nav-Title').removeClass('actived');
+        $('.Nav-Header').removeClass('actived');
+      }else{
+        $('#logo-black').addClass('d-none');
+        $('#logo-white').removeClass('d-none');
+        $('.Nav-Title').addClass('actived');
+        $('.Nav-Header').addClass('actived');
+      }
+    })
+  });
   const HamburgerClick = () => {
     if (show) {
       $('.Hamburger-btn').removeClass('active');
@@ -179,7 +194,7 @@ function Nav() {
       <div className="Nav-Container">
         <div className="Nav-Logo">
           <img className="Logo" src={Logo} alt="logo" id="logo-black"></img>
-          <img className="Logo d-none" src={Logo2} alt="logo-2" id="logo-white"></img>
+          <img className="Logo2 d-none" src={Logo2} alt="logo-2" id="logo-white"></img>
           <p className="Nav-Title"> shabu • siy</p>
         </div>
         <div className="Nav-Hamburger" onClick={HamburgerClick}>
