@@ -8,14 +8,13 @@ import Button from 'react-bootstrap/Button';
 
 function Nav() {
   const Logo = require('../Assets/Logo-Hitam.svg').default;
-  // const Logo2 = require('../Assets/Logo-Putih.svg').default;
+  const Logo2 = require('../Assets/Logo-Putih.svg').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
   const [shownav, setshownav] = useState(false);
-
-
+  
   const HamburgerClick = () => {
     if (show) {
       $('.Hamburger-btn').removeClass('active');
@@ -24,15 +23,19 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
     } else {
       $('.Hamburger-btn').addClass('active');
       $('.Hamburger-btn-2').addClass('active');
       $('.Nav-Title').addClass('actived');
       $('.Nav-Header').addClass('actived');
+      $('#logo-black').addClass('d-none');
+      $('#logo-white').removeClass('d-none');
       setShow(true); 
       setshownav(true)
     }
@@ -59,10 +62,12 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
       $("html, body").animate({ 
         scrollTop: $("#About").offset().top - 80 
       }, 100);
@@ -81,10 +86,12 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
       $("html, body").animate({ 
         scrollTop: $("#OurMeat").offset().top - 80 
       }, 100);
@@ -103,10 +110,12 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
       $("html, body").animate({ 
         scrollTop: $("#Recommendation").offset().top - 80 
       }, 100);
@@ -125,10 +134,12 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
       $("html, body").animate({ 
         scrollTop: $("#Menu").offset().top - 80 
       }, 100);
@@ -147,10 +158,12 @@ function Nav() {
       $('.Nav-Header').removeClass('actived');
       $('.modal-dialog').removeClass('Show-up');
       $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
       setTimeout(function () {
         setShow(false);
         setshownav(false);
-      }, 800);
+      }, 300);
       $("html, body").animate({ 
         scrollTop: $("#Contact").offset().top - 80 
       }, 100);
@@ -165,7 +178,8 @@ function Nav() {
     <div className="Nav-Header">
       <div className="Nav-Container">
         <div className="Nav-Logo">
-          <img className="Logo" src={Logo} alt="logo"></img>
+          <img className="Logo" src={Logo} alt="logo" id="logo-black"></img>
+          <img className="Logo d-none" src={Logo2} alt="logo-2" id="logo-white"></img>
           <p className="Nav-Title"> shabu • siy</p>
         </div>
         <div className="Nav-Hamburger" onClick={HamburgerClick}>

@@ -1,6 +1,7 @@
 .Footer-Container{
     height: 100vh;
     background-color: #0E4F79;
+    position: relative;
     .Footer-Wraper{
         padding-top: 44px;
         display: flex;
@@ -115,6 +116,15 @@
             }
         }
     }
+    .hamburger-hider{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 223px;
+      height: 125px;
+      background-color: #0E4F79;
+      z-index: 1057;
+    }
 }
 
 @media (max-width: 768px) {
@@ -148,6 +158,10 @@
                     margin: 4px;
                 }
             }
+        }
+        .hamburger-hider{
+          width: 105px;
+          height: 170px;
         }
     }
 }
