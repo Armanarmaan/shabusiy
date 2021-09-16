@@ -87,6 +87,7 @@
                     font-weight: 400;
                     font-size: 18px;
                     padding-left: 45px;
+                    cursor: pointer;
                 }
             }
             .Menu-Content.collapsing {
@@ -206,7 +207,7 @@
     }
 }
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
     .home{
         .title{
             p{

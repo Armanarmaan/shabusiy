@@ -7,9 +7,9 @@ import { Parallax, Background } from 'react-parallax';
 
 function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
-  const imgsec1 = require('../Assets/sec1.png').default;
-  const imgsec2 = require('../Assets/sec2.png').default;
-  const imgsec3 = require('../Assets/sec3.png').default;
+  const imgsec1 = require('../Assets/about-us.jpg').default;
+  const imgsec2 = require('../Assets/our-meat.jpg').default;
+  const imgsec3 = require('../Assets/recommendation.jpg').default;
   const imgsec4 = require('../Assets/sec4.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
