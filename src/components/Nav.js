@@ -14,33 +14,21 @@ function Nav() {
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
   const [shownav, setshownav] = useState(false);
-  
+
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if($(window).width() < 768){
-        if(window.scrollY <= 4529){
-          $('#logo-black').removeClass('d-none');
-          $('#logo-white').addClass('d-none');
-          $('.Nav-Title').removeClass('actived');
-          $('.Nav-Header').removeClass('actived');
-        }else{
-          $('#logo-black').addClass('d-none');
-          $('#logo-white').removeClass('d-none');
-          $('.Nav-Title').addClass('actived');
-          $('.Nav-Header').addClass('actived');
-        }
-      }else{
-        if(window.scrollY <= 4490){
-          $('#logo-black').removeClass('d-none');
-          $('#logo-white').addClass('d-none');
-          $('.Nav-Title').removeClass('actived');
-          $('.Nav-Header').removeClass('actived');
-        }else{
-          $('#logo-black').addClass('d-none');
-          $('#logo-white').removeClass('d-none');
-          $('.Nav-Title').addClass('actived');
-          $('.Nav-Header').addClass('actived');
-        }
+    var targetFooter = $("#FooterDiv").offset().top - 130;
+
+    var $Footer = $(window).on("scroll", () => {
+      if ($Footer.scrollTop() > targetFooter) {
+        $('#logo-black').addClass('d-none');
+        $('#logo-white').removeClass('d-none');
+        $('.Nav-Title').addClass('actived');
+        $('.Nav-Header').addClass('actived');
+      } else {
+        $('#logo-black').removeClass('d-none');
+        $('#logo-white').addClass('d-none');
+        $('.Nav-Title').removeClass('actived');
+        $('.Nav-Header').removeClass('actived');
       }
     })
   });
@@ -65,7 +53,7 @@ function Nav() {
       $('.Nav-Header').addClass('actived');
       $('#logo-black').addClass('d-none');
       $('#logo-white').removeClass('d-none');
-      setShow(true); 
+      setShow(true);
       setshownav(true)
     }
 
@@ -83,8 +71,8 @@ function Nav() {
 
   }
 
-  const scrollviewTestAbout = () =>{
-    if(show){
+  const scrollviewTestAbout = () => {
+    if (show) {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
@@ -97,66 +85,18 @@ function Nav() {
         setShow(false);
         setshownav(false);
       }, 300);
-      $("html, body").animate({ 
-        scrollTop: $("#About").offset().top - 80 
+      $("html, body").animate({
+        scrollTop: $("#About").offset().top - 80
       }, 100);
     } else {
       setshownav(true);
       setShow(true);
     }
-    
-  }
-  
-  const scrollviewTestOurMeat = () =>{
-    if(show){
-      $('.Hamburger-btn').removeClass('active');
-      $('.Hamburger-btn-2').removeClass('active');
-      $('.Nav-Title').removeClass('actived');
-      $('.Nav-Header').removeClass('actived');
-      $('.modal-dialog').removeClass('Show-up');
-      $('.modal-dialog').addClass('Show-down');
-      $('#logo-black').removeClass('d-none');
-      $('#logo-white').addClass('d-none');
-      setTimeout(function () {
-        setShow(false);
-        setshownav(false);
-      }, 300);
-      $("html, body").animate({ 
-        scrollTop: $("#OurMeat").offset().top - 80 
-      }, 100);
-    } else {
-      setshownav(true);
-      setShow(true);
-    }
-    
-  }
-  
-  const scrollviewTestRecommendation = () =>{
-    if(show){
-      $('.Hamburger-btn').removeClass('active');
-      $('.Hamburger-btn-2').removeClass('active');
-      $('.Nav-Title').removeClass('actived');
-      $('.Nav-Header').removeClass('actived');
-      $('.modal-dialog').removeClass('Show-up');
-      $('.modal-dialog').addClass('Show-down');
-      $('#logo-black').removeClass('d-none');
-      $('#logo-white').addClass('d-none');
-      setTimeout(function () {
-        setShow(false);
-        setshownav(false);
-      }, 300);
-      $("html, body").animate({ 
-        scrollTop: $("#Recommendation").offset().top - 80 
-      }, 100);
-    } else {
-      setshownav(true);
-      setShow(true);
-    }
-    
+
   }
 
-  const scrollviewTestMenu = () =>{
-    if(show){
+  const scrollviewTestOurMeat = () => {
+    if (show) {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
@@ -169,18 +109,18 @@ function Nav() {
         setShow(false);
         setshownav(false);
       }, 300);
-      $("html, body").animate({ 
-        scrollTop: $("#Menu").offset().top - 80 
+      $("html, body").animate({
+        scrollTop: $("#OurMeat").offset().top - 80
       }, 100);
     } else {
       setshownav(true);
       setShow(true);
     }
-    
+
   }
 
-  const scrollviewTestContact = () =>{
-    if(show){
+  const scrollviewTestRecommendation = () => {
+    if (show) {
       $('.Hamburger-btn').removeClass('active');
       $('.Hamburger-btn-2').removeClass('active');
       $('.Nav-Title').removeClass('actived');
@@ -193,14 +133,62 @@ function Nav() {
         setShow(false);
         setshownav(false);
       }, 300);
-      $("html, body").animate({ 
-        scrollTop: $("#Contact").offset().top - 80 
+      $("html, body").animate({
+        scrollTop: $("#Recommendation").offset().top - 80
+      }, 100);
+    } else {
+      setshownav(true);
+      setShow(true);
+    }
+
+  }
+
+  const scrollviewTestMenu = () => {
+    if (show) {
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 300);
+      $("html, body").animate({
+        scrollTop: $("#Menu").offset().top - 80
+      }, 100);
+    } else {
+      setshownav(true);
+      setShow(true);
+    }
+
+  }
+
+  const scrollviewTestContact = () => {
+    if (show) {
+      $('.Hamburger-btn').removeClass('active');
+      $('.Hamburger-btn-2').removeClass('active');
+      $('.Nav-Title').removeClass('actived');
+      $('.Nav-Header').removeClass('actived');
+      $('.modal-dialog').removeClass('Show-up');
+      $('.modal-dialog').addClass('Show-down');
+      $('#logo-black').removeClass('d-none');
+      $('#logo-white').addClass('d-none');
+      setTimeout(function () {
+        setShow(false);
+        setshownav(false);
+      }, 300);
+      $("html, body").animate({
+        scrollTop: $("#Contact").offset().top - 80
       }, 100);
     } else {
       setshownav(true);
       setshownav(true);
     }
-    
+
   }
 
   return (
@@ -251,8 +239,8 @@ function Nav() {
           </div>
         </Modal.Body>
         <Modal.Footer>
-              <p>© CLAW</p>
-              <p>2021, ALL RIGHTS RESERVED.</p>
+          <p>© CLAW</p>
+          <p>2021, ALL RIGHTS RESERVED.</p>
         </Modal.Footer>
 
       </Modal>

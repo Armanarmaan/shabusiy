@@ -57,7 +57,7 @@ function Footer() {
   }
 
   return (
-    <div className="Footer-Container">
+    <div className="Footer-Container" id="FooterDiv">
       <div className="hamburger-hider"></div>
       <div className="Footer-Wraper">
         <div className="Footer-Content-Wraper">
