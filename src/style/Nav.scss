@@ -91,6 +91,9 @@
                 position: absolute;
             }
         }
+        .Nav-Hamburger.actived{
+            display: none;
+        }
     }
 }
 .Nav-Header.actived{

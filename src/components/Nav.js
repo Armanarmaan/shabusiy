@@ -16,20 +16,33 @@ function Nav() {
   const [shownav, setshownav] = useState(false);
 
   useEffect(() => {
-    var targetFooter = $("#FooterDiv").offset().top - 130;
+    var targetFooterLogo = $("#FooterDiv").offset().top - 130;
+    var targetFooterTitle = $("#FooterDiv").offset().top - 108;
+    var targetFooterHamburger = $("#FooterDiv").offset().top - 100;
 
     var $Footer = $(window).on("scroll", () => {
-      if ($Footer.scrollTop() > targetFooter) {
+      if ($Footer.scrollTop() >= targetFooterLogo) {
         $('#logo-black').addClass('d-none');
         $('#logo-white').removeClass('d-none');
-        $('.Nav-Title').addClass('actived');
         $('.Nav-Header').addClass('actived');
       } else {
-        $('#logo-black').removeClass('d-none');
-        $('#logo-white').addClass('d-none');
-        $('.Nav-Title').removeClass('actived');
-        $('.Nav-Header').removeClass('actived');
+          $('#logo-black').removeClass('d-none');
+          $('#logo-white').addClass('d-none');
+          $('.Nav-Header').removeClass('actived');
       }
+
+      if($Footer.scrollTop() >= targetFooterTitle){
+        $('.Nav-Title').addClass('actived');
+      } else {
+        $('.Nav-Title').removeClass('actived');
+      }
+
+      if($Footer.scrollTop() >= targetFooterHamburger){
+        $('.Nav-Hamburger').addClass('actived');
+      } else {
+        $('.Nav-Hamburger').removeClass('actived');
+      }
+
     })
   });
   const HamburgerClick = () => {
@@ -86,7 +99,7 @@ function Nav() {
         setshownav(false);
       }, 300);
       $("html, body").animate({
-        scrollTop: $("#About").offset().top - 80
+        scrollTop: $("#About").offset().top - 140
       }, 100);
     } else {
       setshownav(true);
@@ -134,7 +147,7 @@ function Nav() {
         setshownav(false);
       }, 300);
       $("html, body").animate({
-        scrollTop: $("#Recommendation").offset().top - 80
+        scrollTop: $("#Recommendation").offset().top - 150
       }, 100);
     } else {
       setshownav(true);
@@ -232,7 +245,9 @@ function Nav() {
                 <p>FOLLOW US</p>
               </div>
               <div className="Social-Logo-Section">
-                <img src={InstagramLogo} alt="instagram"></img>
+              <a href="https://www.instagram.com/shabu.siy/" target="_blank">
+                <img src={InstagramLogo} alt="instagram" ></img>
+              </a>
                 <img src={FacebookLogo} alt="facebook"></img>
               </div>
             </div>

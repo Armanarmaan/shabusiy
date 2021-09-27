@@ -7,12 +7,8 @@ import $ from 'jquery';
 
 function Footer() {
   const [PagesShow, setPagesShow] = useState(true);
-  // const Logo = require('../Assets/LOGO-19.png').default;
-  // const Logo2 = require('../Assets/LOGO-21.png').default;
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
-  // const [shownav, setshownav] = useState(false);
-  // const [show, setShow] = useState(false);
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -58,7 +54,6 @@ function Footer() {
 
   return (
     <div className="Footer-Container" id="FooterDiv">
-      <div className="hamburger-hider"></div>
       <div className="Footer-Wraper">
         <div className="Footer-Content-Wraper">
           <div className="Footer-Left-Section">
@@ -85,7 +80,9 @@ function Footer() {
               <p>FOLLOW US</p>
             </div>
             <div className="Footer-Social-Logo-Section">
-              <img src={InstagramLogo} alt="instagram"></img>
+              <a href="https://www.instagram.com/shabu.siy/" target="_blank">
+                <img src={InstagramLogo} alt="instagram" ></img>
+              </a>
               <img src={FacebookLogo} alt="facebook"></img>
             </div>
           </div>
