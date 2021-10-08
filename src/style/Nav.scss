@@ -29,7 +29,7 @@
         justify-content: space-between;
         height: 100px;
         margin: 0 auto;
-        padding: 0 92px;
+        padding: 0 90px;
         background-color:unset;
         .Nav-Logo{
             display: flex;
@@ -41,6 +41,7 @@
                 margin-bottom: 0;
                 letter-spacing: 6px;
                 color: #3C3C3B;
+                font-family: RobotoLight;
             }
             .Nav-Title.actived{
                 color: white;
@@ -51,8 +52,7 @@
             }
             .Logo2{
                 transition: 1s;
-                height: 80%;
-                margin: 10px;
+                height: 100%;
             }
         }
         
@@ -148,10 +148,10 @@
                             p{
                                 cursor: pointer;
                                 pointer-events: all;
-                                font-family: Helvetica;
-                                font-size: 16px;
+                                font-family: Roboto;
+                                font-size: 24px;
                                 margin: unset;
-                                letter-spacing: 7px;
+                                letter-spacing: 1px;
                             }
                             .Menu-Content-Tools{
                                 display: inline-flex;
@@ -186,11 +186,11 @@
 
                         .Menu-Content{
                             p{
-                                padding-top: 20px;
-                                font-family: Helvetica;
-                                font-weight: 400;
-                                font-size: 16px;
+                                line-height: 40px;
+                                font-family: Roboto;
+                                font-size: 24px;
                                 padding-left: 45px;
+                                margin-bottom: 0px;
                                 cursor: pointer;
                             }
                         }
@@ -207,7 +207,7 @@
                         .Title-Section{
                             p{
                                 margin: 0px;
-                                font-family: Helvetica;
+                                font-family: Roboto;
                                 font-size: 16px;
                                 letter-spacing: 7px;
                                 font-weight: 300;
@@ -231,11 +231,10 @@
             .modal-footer{
                 justify-content: space-between;
                 border-top: none;
-                padding: 0px 120px 64px 120px;
+                padding: 0px 159px 64px 100px;
                 p{
                     font-size: 14px;
-                    font-family: Helvetica;
-                    font-weight: 300;
+                    font-family: Roboto;
                     letter-spacing: 7px;
                 }
             }

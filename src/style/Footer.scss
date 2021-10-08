@@ -22,10 +22,10 @@
                     box-shadow: none;
                     align-items: center;
                     p{
-                        font-family: Helvetica;
-                        font-size: 16px;
+                        font-family: Roboto;
+                        font-size: 24px;
                         margin: unset;
-                        letter-spacing: 7px;
+                        letter-spacing: 1px;
                     }
                     .Menu-Content-Tools{
                         display: inline-flex;
@@ -60,11 +60,11 @@
 
                 .Menu-Content{
                     p{
-                        padding-top: 20px;
-                        font-family: Helvetica;
-                        font-weight: 400;
-                        font-size: 16px;
+                        font-family: Roboto;
+                        font-size: 24px;
                         padding-left: 45px;
+                        margin-bottom: 0px;
+                        line-height: 40px;
                         color: white;
                         cursor: pointer;
                     }
@@ -81,7 +81,7 @@
                     p{
                         color: white;
                         margin: 0px;
-                        font-family: Helvetica;
+                        font-family: Roboto;
                         font-size: 16px;
                         letter-spacing: 7px;
                         font-weight: 300;
@@ -96,6 +96,7 @@
             }
             .Footer-Right-Section{
                 p{
+                    font-family: Roboto;
                     color: white;
                     letter-spacing: 10px;
                     font-size: 32px;
@@ -104,27 +105,18 @@
         }
         .Footer-Lower-Section{
             justify-content: space-between;
-            padding: 35px 125px 0px 125px;
+            padding: 35px 120px 0px 100px;
             display: flex;
             p{
                 color: white;
                 font-size: 14px;
-                font-family: Helvetica;
-                font-weight: 300;
+                font-family: Roboto;
                 letter-spacing: 7px;
                 margin: unset;
             }
         }
     }
-    .hamburger-hider{
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 223px;
-      height: 125px;
-      background-color: #0E4F79;
-      z-index: 1057;
-    }
+    
 }
 
 @media (max-width: 768px) {

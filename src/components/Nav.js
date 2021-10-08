@@ -7,16 +7,18 @@ import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 
 function Nav() {
-  const Logo = require('../Assets/Logo-Hitam.svg').default;
-  const Logo2 = require('../Assets/Logo_Putih.svg').default;
+  const LogoPutih = require('../Assets/Logo Baru Putih.png').default;
+  const LogoHitam = require('../Assets/LogoBaruHitam.png').default
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
+  const LinkTree = require('../Assets/linktree.png').default;
+
   const [show, setShow] = useState(false);
   const [PagesShow, setPagesShow] = useState(true);
   const [shownav, setshownav] = useState(false);
 
   useEffect(() => {
-    var targetFooterLogo = $("#FooterDiv").offset().top - 130;
+    var targetFooterLogo = $("#FooterDiv").offset().top - 145;
     var targetFooterTitle = $("#FooterDiv").offset().top - 108;
     var targetFooterHamburger = $("#FooterDiv").offset().top - 100;
 
@@ -208,9 +210,9 @@ function Nav() {
     <div className="Nav-Header">
       <div className="Nav-Container">
         <div className="Nav-Logo">
-          <img className="Logo" src={Logo} alt="logo" id="logo-black"></img>
-          <img className="Logo2 d-none" src={Logo2} alt="logo-2" id="logo-white"></img>
-          <p className="Nav-Title"> shabu • siy</p>
+          <img className="Logo" src={LogoHitam} alt="logo" id="logo-black"></img>
+          <img className="Logo2 d-none" src={LogoPutih} alt="logo-2" id="logo-white"></img>
+          
         </div>
         <div className="Nav-Hamburger" onClick={HamburgerClick}>
           <div className="Hamburger-btn"></div>
@@ -248,7 +250,9 @@ function Nav() {
               <a href="https://www.instagram.com/shabu.siy/" target="_blank">
                 <img src={InstagramLogo} alt="instagram" ></img>
               </a>
-                <img src={FacebookLogo} alt="facebook"></img>
+              <a href="https://www.linktree.com/shabusiy" target="_blank">
+              <img src={LinkTree} alt="linktree"></img>
+              </a>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ function Footer() {
   const [PagesShow, setPagesShow] = useState(true);
   const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
+  const LinkTree = require('../Assets/linktree.png').default;
 
   const PagesClick = () => {
     if (PagesShow) {
@@ -83,7 +84,9 @@ function Footer() {
               <a href="https://www.instagram.com/shabu.siy/" target="_blank">
                 <img src={InstagramLogo} alt="instagram" ></img>
               </a>
-              <img src={FacebookLogo} alt="facebook"></img>
+              <a href="https://www.linktree.com/shabusiy" target="_blank">
+              <img src={LinkTree} alt="linktree"></img>
+              </a>
             </div>
           </div>
         </div>
