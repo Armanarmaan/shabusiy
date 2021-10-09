@@ -123,18 +123,21 @@
     .Footer-Container{
         .Footer-Wraper{
             .Footer-Content-Wraper{
-                padding: 150px 16px 0px 16px;
+                padding: 155px 16px 0px 16px;
                 height: 80vh;
                 .Footer-Left-Section{
+                    .Left-Section-Tools{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
                     .Menu-Content{
                         padding-top: unset;
                         padding-left: unset;
                         letter-spacing: unset;
                         p{
-                            font-family: Helvetica;
-                            padding-top: 10px;
+                            font-size: 20px;
                             padding-left: 24px;
-                            letter-spacing: 3px;
                         }
                     }
                 }

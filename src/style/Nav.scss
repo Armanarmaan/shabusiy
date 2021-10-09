@@ -19,7 +19,7 @@
 
 .Nav-Header{
     position: fixed;
-    padding-top: 44px;
+    padding-top: 40px;
     height: 20px;
     width: 100%;
     z-index: 1056;
@@ -243,15 +243,16 @@
 
     @media (max-width: 768px){
         .Nav-Header{
+            padding-top: 20px;
             .Nav-Container{
-                padding: 0px 20px;
+                padding: 0px 30px;
                 .Nav-Logo{
                     width: 210px;
                     .Logo{
                         height: 80%;
                     }
                     .Logo2{
-                        height: 60%;
+                        height: 80%;
                     }
                     .Nav-Title{
                         mix-blend-mode: difference;
@@ -282,15 +283,20 @@
                 .modal-content{
                     height: 100vh;
                     .modal-body{
-                        max-height: 76vh;
+                        max-height: 66vh;
                         .Nav-Container{
-                            padding: 177px 0px 0px 0px;
+                            padding: 155px 0px 0px 0px;
                             .Left-Section{
+                                .Left-Section-Tools{
+                                    p{
+                                        font-size: 20px;
+                                    }
+                                }
                                 .Menu-Content{
                                     p{
-                                        padding-top: 10px;
+                                        line-height: 40px;
+                                        font-size: 20px;
                                         padding-left: 24px;
-                                        letter-spacing: 3px;
                                     }
                                 }
                             }
