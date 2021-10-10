@@ -3,7 +3,7 @@ import $ from 'jquery';
 import React, { useEffect } from 'react';
 
 function Loading() {
-  const Logo = require('../Assets/logo-loading.svg').default;
+  const Logo = require('../Assets/Logo Baru Putih.png').default;
 
   useEffect(() => {
     $('body').css('overflow', 'hidden');

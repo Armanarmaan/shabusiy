@@ -7,7 +7,7 @@ import $ from 'jquery';
 
 function Footer() {
   const [PagesShow, setPagesShow] = useState(true);
-  const FacebookLogo = require('../Assets/Facebook.png').default;
+  // const FacebookLogo = require('../Assets/Facebook.png').default;
   const InstagramLogo = require('../Assets/Instagram.png').default;
   const LinkTree = require('../Assets/linktree.png').default;
 
@@ -81,10 +81,10 @@ function Footer() {
               <p>FOLLOW US</p>
             </div>
             <div className="Footer-Social-Logo-Section">
-              <a href="https://www.instagram.com/shabu.siy/" target="_blank">
+              <a href="https://www.instagram.com/shabu.siy/" target="_blank" rel="noreferrer">
                 <img src={InstagramLogo} alt="instagram" ></img>
               </a>
-              <a href="https://www.linktree.com/shabusiy" target="_blank">
+              <a href="https://www.linktree.com/shabusiy" target="_blank" rel="noreferrer">
               <img src={LinkTree} alt="linktree"></img>
               </a>
             </div>

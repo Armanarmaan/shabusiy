@@ -7,8 +7,18 @@
   justify-content: center;
   align-items: center;
   z-index: 9999999;
+  img{
+    width: 100px;
+    height: auto;
+  }
 }
-
+@media (max-width: 768px) {
+  .Loading-Container{
+    img{
+      width: 80px;
+    }
+  }
+}
 .unload{
   animation-name: opacity-off;
   animation-duration: 0.7s;
