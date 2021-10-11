@@ -11,6 +11,7 @@ function Home() {
   const imgsec2 = require('../Assets/our-meat.jpg').default;
   const imgsec3 = require('../Assets/recommendation.jpg').default;
   const imgsec4 = require('../Assets/sec4.png').default;
+  const Menu_Book = require('../Assets/Menu_Book.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
 
@@ -27,32 +28,32 @@ function Home() {
   }
 
   const scrollviewTestAbout = () => {
-    $("html, body").animate({ 
-      scrollTop: $("#About").offset().top - 80 
+    $("html, body").animate({
+      scrollTop: $("#About").offset().top - 80
     }, 100);
   }
 
   const scrollviewTestOurMeat = () => {
-    $("html, body").animate({ 
-      scrollTop: $("#OurMeat").offset().top - 80 
+    $("html, body").animate({
+      scrollTop: $("#OurMeat").offset().top - 80
     }, 100);
   }
 
   const scrollviewTestRecommendation = () => {
-    $("html, body").animate({ 
-      scrollTop: $("#Recommendation").offset().top - 80 
+    $("html, body").animate({
+      scrollTop: $("#Recommendation").offset().top - 80
     }, 100);
   }
 
   const scrollviewTestMenu = () => {
-    $("html, body").animate({ 
-      scrollTop: $("#Menu").offset().top - 80 
+    $("html, body").animate({
+      scrollTop: $("#Menu").offset().top - 80
     }, 100);
   }
 
   const scrollviewTestContact = () => {
-    $("html, body").animate({ 
-      scrollTop: $("#Contact").offset().top - 80 
+    $("html, body").animate({
+      scrollTop: $("#Contact").offset().top - 80
     }, 100);
   }
 
@@ -86,8 +87,8 @@ function Home() {
       <div className="section1" id="About">
         <div className="contentsec1">
           <div className="sec1-left">
-            {isMobile ? 
-            <img src={imgsec1} className="image" alt="about us"/> : <Parallax bgImage={imgsec1} strength={250} className="parallax"></Parallax>
+            {isMobile ?
+              <img src={imgsec1} className="image" alt="about us" /> : <Parallax bgImage={imgsec1} strength={250} className="parallax"></Parallax>
             }
           </div>
           <div className="sec1-right">
@@ -107,14 +108,14 @@ function Home() {
             </div>
           </div>
           <div className="sec2-right">
-            {isMobile ? <img src={imgsec2} className="image" alt="our meat"/> : <Parallax bgImage={imgsec2} strength={250} className="parallax"></Parallax>}
+            {isMobile ? <img src={imgsec2} className="image" alt="our meat" /> : <Parallax bgImage={imgsec2} strength={250} className="parallax"></Parallax>}
           </div>
         </div>
       </div>
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            {isMobile ? <img src={imgsec3} className="image" alt="recommendation"/> : <Parallax bgImage={imgsec3} strength={200} className="parallax3"></Parallax>}
+            {isMobile ? <img src={imgsec3} className="image" alt="recommendation" /> : <Parallax bgImage={imgsec3} strength={200} className="parallax3"></Parallax>}
           </div>
           <div className="sec3-right">
             <div>
@@ -133,7 +134,26 @@ function Home() {
             </div>
           </div>
           <div className="sec4-right">
-            <img src={imgsec4} alt="sec4" />
+            <div className="container Desktop">
+              <a className="book" href="https://drive.google.com/file/d/1wN1a9jvnfAkWn7ozosVIFf4TYCPl529n/view?usp=sharing" target="_blank">
+                <div className="front">
+                  <div className="cover">
+                    <img src={Menu_Book} />
+                  </div>
+                </div>
+                <div className="left-side">
+                  <h2>
+                    <span>Menu Book</span>
+                    <span>2021</span>
+                  </h2>
+                </div>
+              </a>
+            </div>
+            <div className="container Mobile">
+              <a className="bookMobile" href="https://drive.google.com/file/d/1wN1a9jvnfAkWn7ozosVIFf4TYCPl529n/view?usp=sharing" target="_blank">
+                <img src={Menu_Book} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +169,7 @@ function Home() {
             </div>
             <div className="content-midle">
               <p>Email</p>
-              <a href = "mailto: shabuysiy.jakarta@gmail.com">shabuysiy.jakarta@gmail.com</a>
+              <a href="mailto: shabuysiy.jakarta@gmail.com">shabuysiy.jakarta@gmail.com</a>
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
