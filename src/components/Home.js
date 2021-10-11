@@ -11,7 +11,7 @@ function Home() {
   const imgsec2 = require('../Assets/our-meat.jpg').default;
   const imgsec3 = require('../Assets/recommendation.jpg').default;
   const imgsec4 = require('../Assets/sec4.png').default;
-  const Menu_Book = require('../Assets/Menu_Book.png').default;
+  const Menu_Book = require('../Assets/Menu_Book1.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
 
@@ -135,7 +135,7 @@ function Home() {
           </div>
           <div className="sec4-right">
             <div className="container Desktop">
-              <a className="book" href="https://drive.google.com/file/d/1wN1a9jvnfAkWn7ozosVIFf4TYCPl529n/view?usp=sharing" target="_blank">
+              <a className="book" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank">
                 <div className="front">
                   <div className="cover">
                     <img src={Menu_Book} />
@@ -143,14 +143,14 @@ function Home() {
                 </div>
                 <div className="left-side">
                   <h2>
-                    <span>Menu Book</span>
+                    <span>SHABU SIY MENU</span>
                     <span>2021</span>
                   </h2>
                 </div>
               </a>
             </div>
             <div className="container Mobile">
-              <a className="bookMobile" href="https://drive.google.com/file/d/1wN1a9jvnfAkWn7ozosVIFf4TYCPl529n/view?usp=sharing" target="_blank">
+              <a className="bookMobile" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank">
                 <img src={Menu_Book} />
               </a>
             </div>
@@ -165,11 +165,11 @@ function Home() {
           <div className="content">
             <div className="content-top">
               <p>Address</p>
-              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9">Jl. Cipete Raya No.12, Jakarta</a>
+              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9" target="_blank">Jl. Cipete Raya No.12, Jakarta</a>
             </div>
             <div className="content-midle">
               <p>Email</p>
-              <a href="mailto: shabuysiy.jakarta@gmail.com">shabuysiy.jakarta@gmail.com</a>
+              <a href="mailto: shabuysiy.jakarta@gmail.com" target="_blank">shabuysiy.jakarta@gmail.com</a>
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
