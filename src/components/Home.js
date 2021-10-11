@@ -9,9 +9,19 @@ function Home() {
   const imglandingpage = require('../Assets/landingpage.png').default;
   const imgsec1 = require('../Assets/about-us.jpg').default;
   const imgsec2 = require('../Assets/our-meat.jpg').default;
-  const imgsec3 = require('../Assets/recommendation.jpg').default;
+  const imgsec3 = require('../Assets/recommendation.png').default;
   const imgsec4 = require('../Assets/sec4.png').default;
-  const Menu_Book = require('../Assets/Menu_Book.png').default;
+  const beefshabu = require('../Assets/BEEF SHABU.png').default;
+  const chickensausage = require('../Assets/CHICKEN SAUSAGE.png').default;
+  const chickensteak = require('../Assets/CHICKEN STEAK.png').default;
+  const cubetender = require('../Assets/CUBE TENDER.png').default;
+  const rosu = require('../Assets/ROSU.png').default;
+  const siykarubi = require('../Assets/SIY KARUBI.png').default;
+  const siymiyuji = require('../Assets/SIY MIYUJI.png').default;
+  const siysteak = require('../Assets/SIY STEAK.png').default;
+  const specialsuki = require('../Assets/SPECIAL SUKI.png').default;
+  const siybeef = require('../Assets/SIY BEEF.png').default;
+  const usplate = require('../Assets/US PLATE.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
 
@@ -94,7 +104,8 @@ function Home() {
           <div className="sec1-right">
             <div>
               <p className="title">ABOUT</p>
-              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
+              <p>Shabu Siy is an Authentic Japanese Complex that consists of all you can shabu-shabu and grill, japanese traditional market with variety of yakitori, and coffee shop to relax and enjoy your last time before heading off. Serving you variety of choices,
+                these three facilities offers you an exciting experience for you to enjoy for yourself and your loved ones. Imported ingredients are served to reach the best quality there is, thriving warm smiles on people’s faces.</p>
             </div>
           </div>
         </div>
@@ -104,7 +115,8 @@ function Home() {
           <div className="sec2-left">
             <div>
               <p className="title">OUR MEAT</p>
-              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
+              <p>We offer various types of meat with the best quality there is on the market, ready to be enjoyed in Shabu Siy.
+                Accompanied with variety of meal and side dishes with excellent taste, to enhance your dining experience here at Shabu Siy.</p>
             </div>
           </div>
           <div className="sec2-right">
@@ -115,12 +127,13 @@ function Home() {
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            {isMobile ? <img src={imgsec3} className="image" alt="recommendation" /> : <Parallax bgImage={imgsec3} strength={200} className="parallax3"></Parallax>}
+            {isMobile ? <img src={imgsec3} className="image" alt="recommendation" /> : <img src={imgsec3} className="image" alt="recommendation" />}
           </div>
           <div className="sec3-right">
             <div>
               <p className="title">RECOMMENDATION</p>
-              <p>Offering exceptional shabu-shabu menus in a setting of sheer luxury, the Shabu Siy brand has received praise and accolades from the media in various countries. Shabu Siy strives to bring out the best in the distinctive Japanese food culture, through fabulous concoctions of flavors executed with style, precision and simplicity.</p>
+              <p>We recommend trying all of our selected menus here at Shabu Siy combined with our finest soup of your choice,
+                with the support of the unique ambiance of the place itself, resulting in an exquisite Japanese Authentic experience.</p>
             </div>
           </div>
         </div>
@@ -165,7 +178,7 @@ function Home() {
           <div className="content">
             <div className="content-top">
               <p>Address</p>
-              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9">Jl. Cipete Raya No.12, Jakarta</a>
+              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9">Jl. Cipete Raya No.12 C, Jakarta</a>
             </div>
             <div className="content-midle">
               <p>Email</p>
@@ -173,7 +186,66 @@ function Home() {
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
-              <p>021-7123456</p>
+              <a href="tel:081291191160">08129119160</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="gallery">
+        <div className="contentgallery">
+          <div className="titlegallery">
+            <p className="title">GALLERY</p>
+          </div>
+          <div className="rows">
+            <div className="items">
+              <p>BEEF SHABU</p>
+              <img src={beefshabu} />
+            </div>
+            <div className="items">
+              <p>SIY KARUBI</p>
+              <img src={siykarubi} />
+            </div>
+            <div className="items">
+              <p>SPECIAL SUKI</p>
+              <img src={specialsuki} />
+            </div>
+          </div>
+          <div className="rows">
+            <div className="items">
+              <p>US PLATE</p>
+              <img src={usplate} />
+            </div>
+            <div className="items">
+              <p>SIY STEAK</p>
+              <img src={siysteak} />
+            </div>
+            <div className="items">
+              <p>ROSU</p>
+              <img src={rosu} />
+            </div>
+          </div>
+          <div className="rows">
+            <div className="items">
+              <p>SIY BEEF</p>
+              <img src={siybeef} />
+            </div>
+            <div className="items">
+              <p>SIY MIYUJI</p>
+              <img src={siymiyuji} />
+            </div>
+            <div className="items">
+              <p>CHICKEN SAUSAGE</p>
+              <img src={chickensausage} />
+            </div>
+          </div>
+          <div className="rows">
+            <div className="items">
+              <p>CHCIKEN STEAK</p>
+              <img src={chickensteak} />
+            </div>
+            <div className="items">
+              <p>CUBE TENDER</p>
+              <img src={cubetender} />
             </div>
           </div>
         </div>

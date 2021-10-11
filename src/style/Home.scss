@@ -6,7 +6,8 @@
     .section3,
     .section4,
     .section5,
-    .landingpage {
+    .landingpage,
+    .gallery {
         width: 100%;
         height: auto;
     }
@@ -16,24 +17,28 @@
     }
 
     p {
-        font-size: .9em;
+        font-size: 16px;
         line-height: 2.2;
-        letter-spacing: 2.5px;
-        margin-top: 10px;
+        letter-spacing: 1.5px;
+        font-family: Planta;
+        text-align: justify;
+        color: #0E4F79;
+        margin-bottom: 0px;
     }
 
     a {
-        font-size: .9em;
+        font-size: 16px;
         line-height: 2.2;
-        letter-spacing: 2.5px;
-        margin-top: 10px;
-        color: black;
+        letter-spacing: 1.5px;
         text-decoration: none;
+        font-family: Planta;
+        color: #0E4F79;
     }
 
     .title{    
             font-size: 22px;
-            letter-spacing: 7px;
+            letter-spacing: 1px;
+            font-family: Roboto;
     }
 
     .parallax{
@@ -74,8 +79,9 @@
                     font-family: Helvetica;
                     margin: unset;
                     line-height: unset;
-                    letter-spacing: 7px;
-                    color: black;
+                    letter-spacing: 1px;
+                    color: #0E4F79;
+                    font-family: Roboto;
                 }
 
                 .Menu-Content-Tools {
@@ -120,6 +126,7 @@
                     letter-spacing: unset;
                     padding-left: 45px;
                     cursor: pointer;
+                    font-family: Roboto;
                 }
             }
 
@@ -217,6 +224,12 @@
         .contentsec4 {
             .sec4-left {
                 text-align: center;
+                .title{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
             }
 
             .sec4-right {
@@ -407,7 +420,10 @@
                 margin-bottom: 50px;
 
                 p {
-                    font-size: 1.2em;
+                    font-size: 22px;
+                    text-align: center;
+                    font-family: Roboto;
+                    letter-spacing: 1px;
                 }
             }
 
@@ -418,7 +434,7 @@
                 flex-direction: column;
 
                 p {
-                    font-size: 1em;
+                    font-size: 16px;
                 }
 
                 .content-top {
@@ -438,15 +454,37 @@
             }
         }
     }
+
+    .gallery{
+        padding-bottom: 100px;
+        .contentgallery{
+            padding: 0px 94px;
+            p{
+                text-align: center;
+                font-family: Roboto;
+            }
+            .titlegallery{
+                margin-bottom: 50px;
+            }
+            .rows{
+                justify-content: center;
+                display: flex;
+                .items{
+                    text-align: center;
+                    display: block;
+                    width: 30%;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .home {
         .title {
-            p {
                 font-size: 20px;
-                margin-bottom: 1.3em;
-            }
+                margin-bottom: 0px;     
         }
 
         p {
@@ -599,9 +637,26 @@
                     }
 
                     p {
-                        font-size: 18px;
+                        font-size: 14px;
                         line-height: 60px;
                         letter-spacing: 3px;
+                    }
+
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .gallery{
+            padding-bottom: 100px;
+            .contentgallery{
+                padding: 0vw 12vw;
+                .rows{
+                    display: block;
+                    .items{
+                        width: 100%;
                     }
                 }
             }
