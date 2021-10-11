@@ -10,7 +10,7 @@ function Home() {
   const imgsec1 = require('../Assets/about-us.jpg').default;
   const imgsec2 = require('../Assets/our-meat.jpg').default;
   const imgsec3 = require('../Assets/recommendation.png').default;
-  const imgsec4 = require('../Assets/sec4.png').default;
+  const Menu_Book = require('../Assets/Menu_Book.png').default;
   const beefshabu = require('../Assets/BEEF SHABU.png').default;
   const chickensausage = require('../Assets/CHICKEN SAUSAGE.png').default;
   const chickensteak = require('../Assets/CHICKEN STEAK.png').default;
