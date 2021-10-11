@@ -34,6 +34,7 @@
         .Nav-Logo{
             display: flex;
             align-items: center;
+            width: 100px;
             .Nav-Title{
                 mix-blend-mode: difference;
                 margin-left: 17px;
@@ -80,6 +81,8 @@
                 transition: 0.6s;
             }
             .Hamburger-btn.active{
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
                 background-color: white;
                 width: 67px !important;
@@ -87,6 +90,8 @@
             }
             .Hamburger-btn-2.active{
                 background-color: white;
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
                 position: absolute;
             }
@@ -208,8 +213,7 @@
                             p{
                                 margin: 0px;
                                 font-family: Roboto;
-                                font-size: 16px;
-                                letter-spacing: 7px;
+                                font-size: 24px;
                                 font-weight: 300;
                             }
                         }
