@@ -240,7 +240,7 @@ function Home() {
           </div>
           <div className="rows">
             <div className="items">
-              <p>CHCIKEN STEAK</p>
+              <p>CHICKEN STEAK</p>
               <img src={chickensteak} />
             </div>
             <div className="items">
