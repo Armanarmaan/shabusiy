@@ -148,10 +148,10 @@ function Home() {
           </div>
           <div className="sec4-right">
             <div className="container Desktop">
-              <a className="book" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank">
+              <a className="book" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank" rel="noreferrer">
                 <div className="front">
                   <div className="cover">
-                    <img src={Menu_Book} />
+                    <img src={Menu_Book} alt="Shabusiy-Menu-Book"/>
                   </div>
                 </div>
                 <div className="left-side">
@@ -163,8 +163,8 @@ function Home() {
               </a>
             </div>
             <div className="container Mobile">
-              <a className="bookMobile" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank">
-                <img src={Menu_Book} />
+              <a className="bookMobile" href="https://drive.google.com/file/d/1NH45XZZ7CZVEmov90ScYrlYvUNY_xhpj/view?usp=drivesdk" target="_blank" rel="noreferrer">
+                <img src={Menu_Book} alt="Shabusiy-Menu-Book"/>
               </a>
             </div>
           </div>
@@ -178,11 +178,11 @@ function Home() {
           <div className="content">
             <div className="content-top">
               <p>Address</p>
-              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9" target="_blank">Jl. Cipete Raya No.12, Jakarta</a>
+              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9" target="_blank" rel="noreferrer">Jl. Cipete Raya No.12, Jakarta</a>
             </div>
             <div className="content-midle">
               <p>Email</p>
-              <a href="mailto: shabuysiy.jakarta@gmail.com" target="_blank">shabuysiy.jakarta@gmail.com</a>
+              <a href="mailto: shabuysiy.jakarta@gmail.com" target="_blank" rel="noreferrer">shabuysiy.jakarta@gmail.com</a>
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
@@ -199,53 +199,53 @@ function Home() {
           <div className="rows">
             <div className="items">
               <p>BEEF SHABU</p>
-              <img src={beefshabu} />
+              <img src={beefshabu} alt="beef-shabu"/>
             </div>
             <div className="items">
               <p>SIY KARUBI</p>
-              <img src={siykarubi} />
+              <img src={siykarubi} alt="siy-karubi"/>
             </div>
             <div className="items">
               <p>SPECIAL SUKI</p>
-              <img src={specialsuki} />
+              <img src={specialsuki} alt="special-suke"/>
             </div>
           </div>
           <div className="rows">
             <div className="items">
               <p>US PLATE</p>
-              <img src={usplate} />
+              <img src={usplate} alt="us-plate"/>
             </div>
             <div className="items">
               <p>SIY STEAK</p>
-              <img src={siysteak} />
+              <img src={siysteak} alt="siy-steak"/>
             </div>
-            <div className="items">
+            <div className="items" >
               <p>ROSU</p>
-              <img src={rosu} />
+              <img src={rosu} alt="rosu"/>
             </div>
           </div>
           <div className="rows">
             <div className="items">
               <p>SIY BEEF</p>
-              <img src={siybeef} />
+              <img src={siybeef} alt="siy-beef"/>
             </div>
             <div className="items">
               <p>SIY MIYUJI</p>
-              <img src={siymiyuji} />
+              <img src={siymiyuji} alt="beef-shabu"/>
             </div>
             <div className="items">
               <p>CHICKEN SAUSAGE</p>
-              <img src={chickensausage} />
+              <img src={chickensausage} alt="chicken-sausage"/>
             </div>
           </div>
           <div className="rows">
             <div className="items">
               <p>CHCIKEN STEAK</p>
-              <img src={chickensteak} />
+              <img src={chickensteak} alt="chicken-steak"/>
             </div>
             <div className="items">
               <p>CUBE TENDER</p>
-              <img src={cubetender} />
+              <img src={cubetender} alt="cube-tender"/>
             </div>
           </div>
         </div>
