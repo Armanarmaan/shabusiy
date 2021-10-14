@@ -93,7 +93,7 @@
                         position: absolute;
                         width: 15px;
                         height: 2px;
-                        background-color: black;
+                        background-color: #0E4F79;
                         border-radius: 5px;
                         margin: 0px;
                     }
@@ -102,7 +102,7 @@
                         transform: rotate(0deg);
                         width: 15px;
                         height: 2px;
-                        background-color: black;
+                        background-color: #0E4F79;
                         border-radius: 5px;
                         transition: 0.8s;
                     }
@@ -160,9 +160,26 @@
                 align-items: center;
                 width: 50%;
                 padding-left: 20px;
+                .TitleDiv{
+                    display: flex;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 22px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
             }
         }
 
+    }
+    .Image-Section{
+        padding-bottom: 212px;
+        img{
+            
+        width: 100%;
+        }
     }
 
     .section2 {
@@ -178,6 +195,16 @@
                 padding-right: 20px;
                 display: flex;
                 align-items: center;
+                .TitleDiv{
+                    display: flex;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 21px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
             }
 
             .sec2-right {
@@ -213,6 +240,16 @@
                 padding-left: 20px;
                 display: flex;
                 align-items: center;
+                .TitleDiv{
+                    display: flex;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 21px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
             }
         }
 
@@ -224,12 +261,24 @@
         .contentsec4 {
             .sec4-left {
                 text-align: center;
+                .TitleDiv{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 21px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
                 .title{
                     text-align: center;
                 }
                 p{
                     text-align: center;
                 }
+                
             }
 
             .sec4-right {
@@ -425,6 +474,17 @@
                     font-family: Roboto;
                     letter-spacing: 1px;
                 }
+                .TitleDiv{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 21px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
             }
 
             .content {
@@ -465,6 +525,17 @@
             }
             .titlegallery{
                 margin-bottom: 50px;
+                .TitleDiv{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 15px;
+                    .japtitle{
+                        font-family: RobotoBold;
+                        font-size: 21px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                    }
+                }
             }
             .rows{
                 justify-content: center;
@@ -498,6 +569,8 @@
 
                 .imgldpage {
                     width: auto;
+                    position: relative;
+                    right: 195%;
                 }
             }
 
@@ -571,6 +644,12 @@
                     padding-left: unset;
                     padding-top: unset;
                     margin-top: 1.6em;
+                    .TitleDiv{
+                        flex-direction: column;
+                        .japtitle{
+                            padding-left: 0px;
+                        }
+                    }
                 }
             }
         }

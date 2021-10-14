@@ -6,7 +6,7 @@ import $ from 'jquery';
 import { Parallax } from 'react-parallax';
 
 function Home() {
-  const imglandingpage = require('../Assets/landingpage.png').default;
+  const imglandingpage = require('../Assets/LandingPage_Photo.png').default;
   const imgsec1 = require('../Assets/about-us.jpg').default;
   const imgsec2 = require('../Assets/our-meat.jpg').default;
   const imgsec3 = require('../Assets/recommendation.png').default;
@@ -22,6 +22,7 @@ function Home() {
   const siybeef = require('../Assets/SIY BEEF.png').default;
   const usplate = require('../Assets/US PLATE.png').default;
   const Menu_Book = require('../Assets/Menu_Book1.png').default;
+  const ImageSection = require('../Assets/Gambar-Lantai2.png').default;
   const [PagesShow, setPagesShow] = useState(true);
   const isMobile = window.innerWidth < 768 ? true : false;
 
@@ -103,18 +104,29 @@ function Home() {
           </div>
           <div className="sec1-right">
             <div>
-              <p className="title">ABOUT</p>
+              <div className="TitleDiv">
+              <p className="title">ABOUT /</p>
+              <p className="japtitle">だいたい</p>
+              </div>
               <p>Shabu Siy is an Authentic Japanese Complex that consists of all you can shabu-shabu and grill, japanese traditional market with variety of yakitori, and coffee shop to relax and enjoy your last time before heading off. Serving you variety of choices,
                 these three facilities offers you an exciting experience for you to enjoy for yourself and your loved ones. Imported ingredients are served to reach the best quality there is, thriving warm smiles on people’s faces.</p>
             </div>
           </div>
         </div>
       </div>
+      <div className="Image-Section">
+       
+          <img src={ImageSection} alt="SecondFloor-Section" />
+        
+      </div>
       <div className="section2" id="OurMeat">
         <div className="contentsec2">
           <div className="sec2-left">
             <div>
-              <p className="title">OUR MEAT</p>
+            <div className="TitleDiv">
+              <p className="title">OUR MEAT /</p>
+              <p className="japtitle">私たちの肉</p>
+            </div>
               <p>We offer various types of meat with the best quality there is on the market, ready to be enjoyed in Shabu Siy.
                 Accompanied with variety of meal and side dishes with excellent taste, to enhance your dining experience here at Shabu Siy.</p>
             </div>
@@ -131,7 +143,10 @@ function Home() {
           </div>
           <div className="sec3-right">
             <div>
-              <p className="title">RECOMMENDATION</p>
+            <div className="TitleDiv">
+              <p className="title">RECOMMENDATION /</p>
+              <p className="japtitle">私たちの推奨事項</p>
+              </div>
               <p>We recommend trying all of our selected menus here at Shabu Siy combined with our finest soup of your choice,
                 with the support of the unique ambiance of the place itself, resulting in an exquisite Japanese Authentic experience.</p>
             </div>
@@ -142,7 +157,10 @@ function Home() {
         <div className="contentsec4">
           <div className="sec4-left">
             <div>
-              <p className="title">MENU</p>
+            <div className="TitleDiv">
+              <p className="title">MENU /</p>
+              <p className="japtitle">私たちの推奨事項</p>
+              </div>
               <p>Click the image to explore our complete menu.</p>
             </div>
           </div>
@@ -173,12 +191,15 @@ function Home() {
       <div className="section5" id="Contact">
         <div className="contentsec5">
           <div className="contact">
-            <p>CONTACT</p>
+          <div className="TitleDiv">
+            <p>CONTACT /</p>
+            <p className="japtitle">私たちの推奨事項</p>
+            </div>
           </div>
           <div className="content">
             <div className="content-top">
               <p>Address</p>
-              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9" target="_blank" rel="noreferrer">Jl. Cipete Raya No.12, Jakarta</a>
+              <a href="https://goo.gl/maps/DYoLpt8NRrirZ8vU9" target="_blank" rel="noreferrer">Jl. Cipete Raya No.12C, Jakarta</a>
             </div>
             <div className="content-midle">
               <p>Email</p>
@@ -194,7 +215,10 @@ function Home() {
       <div className="gallery">
         <div className="contentgallery">
           <div className="titlegallery">
-            <p className="title">GALLERY</p>
+          <div className="TitleDiv">
+            <p className="title">GALLERY /</p>
+            <p className="japtitle">私たちの推奨事項</p>
+            </div>
           </div>
           <div className="rows">
             <div className="items">
@@ -240,7 +264,7 @@ function Home() {
           </div>
           <div className="rows">
             <div className="items">
-              <p>CHCIKEN STEAK</p>
+              <p>CHICKEN STEAK</p>
               <img src={chickensteak} alt="chicken-steak"/>
             </div>
             <div className="items">

@@ -9,10 +9,13 @@
   src: local('Roboto'), url(./Fonts/Roboto-Medium.ttf) format('truetype');
 }
 @font-face{
-  
-
   font-family: 'RobotoLight';
   src: local('RobotoLight'), url(./Fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: local('RobotoBold'), url(./Fonts/Roboto-Bold.ttf) format('truetype');
 }
 
 
