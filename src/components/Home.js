@@ -139,7 +139,7 @@ function Home() {
       <div className="section3" id="Recommendation">
         <div className="contentsec3">
           <div className="sec3-left">
-            {isMobile ? <img src={imgsec3} className="image" alt="recommendation" /> : <img src={imgsec3} className="image" alt="recommendation" />}
+            {isMobile ? <img src={imgsec3} className="image" alt="recommendation" /> : <img src={imgsec3} className="imagerec" alt="recommendation" />}
           </div>
           <div className="sec3-right">
             <div>
@@ -207,7 +207,10 @@ function Home() {
             </div>
             <div className="content-bottom">
               <p>Phone Number</p>
-              <a href="tel:081291191160">08129119160</a>
+              <div>
+              <a href="tel:081291191160">081291191160 / </a>
+              <a href="tel:02139701300">02139701300</a>
+              </div>
             </div>
           </div>
         </div>
