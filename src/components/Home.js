@@ -159,7 +159,7 @@ function Home() {
             <div>
             <div className="TitleDiv">
               <p className="title">MENU /</p>
-              <p className="japtitle">私たちの推奨事項</p>
+              <p className="japtitle">メニュー</p>
               </div>
               <p>Click the image to explore our complete menu.</p>
             </div>
@@ -193,7 +193,7 @@ function Home() {
           <div className="contact">
           <div className="TitleDiv">
             <p>CONTACT /</p>
-            <p className="japtitle">私たちの推奨事項</p>
+            <p className="japtitle">コンタクト</p>
             </div>
           </div>
           <div className="content">
