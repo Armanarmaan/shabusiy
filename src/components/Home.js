@@ -217,7 +217,7 @@ function Home() {
           <div className="titlegallery">
           <div className="TitleDiv">
             <p className="title">GALLERY /</p>
-            <p className="japtitle">私たちの推奨事項</p>
+            <p className="japtitle">ギャラリー</p>
             </div>
           </div>
           <div className="rows">
